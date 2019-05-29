@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="@dimen/item_space_16"
+        android:paddingRight="@dimen/item_space_16">
+        <TextView
+            android:id="@+id/item_title"
+            style="@style/PersonCenterTitle" />
+        <TextView
+            android:layout_toRightOf="@+id/item_title"
+            android:id="@+id/item_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/h6"
+            android:text=""/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/item_state_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/video_call_minute" />
+            <TextView
+                android:id="@+id/tv_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:textColor="#EF6280"
+                android:textSize="@dimen/h6"
+                android:drawablePadding="8dp"
+                android:text=""/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:id="@+id/view_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/line"/>
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mContentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_black_30">
+
+    <LinearLayout
+        android:id="@+id/dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="46dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="68dp"
+            android:paddingBottom="23dp"
+            android:lineSpacingExtra="4dp"
+            tools:text="小姐姐设置了只有VIP用户才能\n视频通话哟~"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/vip_diallog_bg"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/dialog_title"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cancel_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="取消"
+                android:textColor="@color/colorTextC"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:background="@drawable/dialog_btn_left_selector"/>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/vip_dialog_btn_line"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/to_buy_vip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="开通VIP"
+                android:textColor="#FF6666"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:background="@drawable/dialog_btn_right_selector"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.yc.liaolive.view.widget.RoundImageView
+        android:id="@+id/dialog_avatar"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_alignTop="@+id/dialog_content"
+        android:layout_marginTop="-24dp"
+        android:layout_centerHorizontal="true"
+        app:roundShape="circle"
+        app:roundBorderColor="@color/white"
+        app:roundBorderSize="2dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--本地画面预览-->
+    <com.yc.liaolive.videocall.view.VideoCallPerviewWindown
+        android:id="@+id/view_locat_surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.yc.liaolive.videocall.view.VideoCallPerviewWindown>
+    <!--控制器容器-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/video_controller">
+    </RelativeLayout>
+    <!--<com.faceunity.beauty.view.BeautyControlView-->
+        <!--android:id="@+id/fu_beauty_control"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:visibility="gone"/>-->
+</FrameLayout>

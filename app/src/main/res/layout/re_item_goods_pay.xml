@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:drawableLeft="@drawable/vip_payway"
+            android:text="@string/payway"
+            android:drawablePadding="9dp"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#E4E4E4" />
+        <com.yc.liaolive.recharge.view.PayChanlSelectedLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_pay_channel">
+        </com.yc.liaolive.recharge.view.PayChanlSelectedLayout>
+</LinearLayout>

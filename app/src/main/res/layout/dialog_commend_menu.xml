@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_no_fillet_background_white">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_view">
+        </android.support.v7.widget.RecyclerView>
+        <include layout="@layout/item_space_6"></include>
+        <TextView
+            android:id="@+id/btn_submit"
+            style="@style/DialogCancleText"
+            android:text="取消"/>
+        <!--          android:background="@drawable/bt_dialog_bottom_selector"-->
+    </LinearLayout>
+</layout>

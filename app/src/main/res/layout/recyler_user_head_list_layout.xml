@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+    <RelativeLayout
+        android:id="@+id/item_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+        <!--封面-->
+        <ImageView
+            android:id="@+id/item_iv_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_default_item_cover"
+            android:scaleType="centerCrop" />
+        <!--删除按钮-->
+        <!--<ImageView-->
+            <!--android:id="@+id/ic_item_delete"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:padding="3dp"-->
+            <!--android:src="@drawable/ic_private_media_detele"-->
+            <!--android:visibility="gone"/>-->
+        <!--图片件状态-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--审核中-->
+            <TextView
+                android:id="@+id/item_media_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/translucent_50"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h2"
+                android:padding="1dp"
+                android:gravity="center"
+                android:text="审核中..."
+                android:layout_alignParentBottom="true"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

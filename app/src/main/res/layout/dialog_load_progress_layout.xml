@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@drawable/bg_wihte">
+        <com.yc.liaolive.view.widget.CircleProgressView
+            android:id="@+id/circleProgressbar"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="16dp"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_text_style"
+            android:lineSpacingMultiplier="1.2"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tv_loading_message"
+            android:text="message"/>
+    </LinearLayout>
+</layout>

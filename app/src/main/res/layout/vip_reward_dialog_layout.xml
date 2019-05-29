@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/mContentLayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/transparent_black_60">
+
+	<LinearLayout
+		android:id="@+id/dialog_content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="21dp"
+		android:layout_marginRight="21dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		android:orientation="vertical"
+		android:background="@drawable/common_diallog_bg"
+		android:gravity="center">
+
+		<TextView
+			android:id="@+id/dialog_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="45dp"
+			android:layout_centerHorizontal="true"
+			android:text="终身VIP今日福利"
+			android:textSize="19dp"
+			android:textColor="@color/colorContent"
+			android:layout_gravity="center_horizontal"/>
+
+		<LinearLayout
+			android:id="@+id/dialog_itemLy"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginTop="31dp"/>
+
+		<TextView
+			android:id="@+id/dialog_ok_btn"
+			android:layout_width="match_parent"
+			android:layout_height="39dp"
+			android:layout_marginTop="27dp"
+			android:gravity="center"
+			android:background="@drawable/btn_dialog_app_style_cicle"
+			android:text="知道啦"
+			android:textSize="15dp"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="16dp"
+			android:layout_marginBottom="20dp"
+			android:textColor="@color/white"/>
+
+	</LinearLayout>
+
+	<ImageView
+		android:id="@+id/reward_dialog_close"
+		android:layout_width="31dp"
+		android:layout_height="31dp"
+		android:padding="9dp"
+		android:src="@drawable/ic_dialog_btn_close"
+		app:layout_constraintTop_toTopOf="@+id/dialog_content"
+		app:layout_constraintRight_toRightOf="@+id/dialog_content" />
+
+</android.support.constraint.ConstraintLayout>

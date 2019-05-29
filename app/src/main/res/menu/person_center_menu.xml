@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_blacklist"
+        android:orderInCategory="80"
+        android:title="加入黑名单"
+
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_report"
+        android:orderInCategory="80"
+        android:title="举报该用户"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_cancel"
+        android:orderInCategory="80"
+        android:title="@string/cancel"
+        app:showAsAction="never" />
+
+</menu>

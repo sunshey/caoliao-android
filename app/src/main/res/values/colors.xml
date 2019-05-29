@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF000000</color>
+    <color name="colorPrimaryDark">#FF000000</color>
+    <color name="colorAccent">#FFFF6666</color>
+    <color name="app_style">#FFFF6666</color>
+    <color name="app_style_1">#FFFF7575</color>
+    <color name="app_style_btn">#FFFE7475</color>
+    <color name="app_style_title">#FFFF7777</color>
+    <color name="app_style_tab_title">#FFFF7575</color>
+    <color name="app_translucent_style">#80ff7575</color>
+    <color name="app_style_pre">@color/app_style</color>
+    <color name="color_title_bar_bgk">#FFAAAAAA</color>
+    <color name="record_text_color">#FFFA4D77</color>
+    <color name="brod_app_stype">#FF5E69</color>
+    <color name="translucent_50">#50000000</color>
+    <color name="translucent_40">#40000000</color>
+    <color name="translucent_90">#90000000</color>
+    <color name="translucent_65">#65000000</color>
+    <color name="record_item_bg">#77585A67</color>
+    <color name="app_style_tr_bg">#77FA4D77</color>
+    <color name="edit_input_text_bg">#43FFFFFF</color>
+    <color name="translucent_30">#30000000</color>
+    <color name="translucent_22">#22000000</color>F
+    <color name="translucent_res_22">#22FA4D77</color>
+    <color name="translucent_20">#20000000</color>
+    <color name="topic_item_bg_1">#F6ABCC</color>
+    <color name="login_hint">#FFF8583C</color>
+    <color name="weibo">#FFC5322C</color>
+    <color name="weibo_pre">#e95b55</color>
+    <color name="topic_item_bg_2">#FCC457</color>
+    <color name="topic_item_bg_3">#6FDEE5</color>
+    <color name="gray_text">#2A2A2A</color>
+    <color name="input_edit_color">#FFDDDDDD</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="app_new_style">#EC5D83</color>
+    <color name="white_3">#FFF9F9F9</color>
+    <color name="radio_button">#535353</color>
+    <color name="dialog_line">#DEDEDE</color>
+    <color name="white_noimal_dot">#88FFFFFF</color>
+    <color name="white_1">#FFF9F9F9</color>
+    <color name="white_2">#FFF8F8F8</color>
+    <color name="upload_style">#1294F6</color>
+    <color name="camera_color">#1A1825</color>
+    <color name="camera_progressbar_color">#000000</color>
+    <color name="background_dark">#FFF0F2F5</color>
+    <color name="gray_item_bg">#F5F5F5</color>
+    <color name="view_bg">#FFEEEEEE</color>
+    <color name="gift_tab_color_selected">#FF5389</color>
+    <color name="gift_tab_color">#30FA4D77</color>
+    <color name="gift_tab_text_color">#676767</color>
+    <color name="transparent_app_style">#9FFF7044</color>
+    <color name="transparent_white">#66FFFFFF</color>
+    <color name="tab_text_selector_color">#FF6666</color>
+    <color name="tab_text_unselector_color">#333333</color>
+    <color name="app_text_style">#DF6827</color>
+    <color name="app_red_style">#FF0000</color>
+    <color name="app_red_style_2">#FF2222</color>
+    <color name="app_red_style_tr">#70FF0000</color>
+    <color name="app_red_style_pressed">#DC555F</color>
+    <color name="transparent">#00000000</color>
+    <color name="mine_bg">#FFF2F2F2</color>
+    <color name="c9">#777777</color>
+    <color name="commont_title_7">#7A7A7A</color>
+    <color name="commont_title_7c">#7C7C7C</color>
+    <color name="colorTransparentBlack">#44777777</color>
+    <color name="translucent">#80000000</color>
+    <color name="qian_gray">#F0F0F0</color>
+    <color name="gray">#FF999999</color>
+    <color name="gray_qian">#FFCCCCCC</color>
+    <color name="gray_qian1">#E5E5E5</color>
+    <color name="live_chat_color">#FAECA8</color>
+    <color name="line_background_color">#FFEEEEEE</color>
+    <color name="orange">#FF7B16</color>
+    <color name="coment_orange">#FE8944</color>
+    <color name="gift_noty_bg">#FF449CF6</color>
+    <color name="yellow">#FECD52</color>
+    <color name="btn_yellow">#FABB4D</color>
+    <color name="folder">#FA9B0D</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="app_bule_style">#FF358BFF</color>
+    <color name="app_style_pressed">#fc8a67</color>
+    <color name="get_code_bg">#FE9D00</color>
+    <color name="get_red_bg">#FB3F58</color>
+    <color name="get_gray_bg">#B5B5B5</color>
+    <color name="get_gray_5b">#5B5B5B</color>
+    <color name="black">#FF000000</color>
+    <color name="item_title1">#FF37363b</color>
+    <color name="item_title0">#FF1B1B1B</color>
+    <color name="black3">#FF010101</color>
+    <color name="mine_subtitle">#FFFFCC00</color>
+    <color name="red">#FFEE0D28</color>
+    <color name="green">#FF0AC018</color>
+    <color name="app_style_text_color">#FFFC6F03</color>
+    <color name="green_pre">#FF38CC6D</color>
+    <color name="bule_pressed">#099DCE</color>
+    <color name="tips_color">#FF5654</color>
+    <color name="get_code_color">#EC345F</color>
+    <color name="tab_line_color">@color/common_h22</color>
+    <!--255  85  85-->
+    <!--tab标签栏文字的颜色-->
+    <color name="colorTabText">#FF666666</color>
+    <!--正文文字颜色-->
+    <color name="colorContent">#ff333333</color>
+    <!--水波纹或5.0以下选择器颜色-->
+    <color name="tabBackground">@color/app_style</color>
+    <!--item的水波纹颜色-->
+    <color name="itemBackground">#ffcca5</color>
+    <!--item的5.0一下版本选择器颜色-->
+    <color name="itemLowBackground">#f9c69f</color>
+    <color name="message_itemBackground">#ededed</color>
+    <!--通用一级标题的颜色-->
+    <color name="common_h1">#FF333333</color>
+    <color name="common_h111">#AAAAAA</color>
+    <color name="common_h11">#212131</color>
+    <color name="common_h01">#34343e</color>
+    <color name="bule">#145CB9</color>
+    <color name="color5">#21AE58</color>
+    <color name="video_gray">#33DDDDDD</color>
+    <color name="video_orange">#FF7044</color>
+    <color name="video_editback_color">#99000000</color>
+    <color name="video_title_editback_color">#99000000</color>
+    <!--通用二级标题的颜色-->
+    <color name="gray_round">#7C7F89</color>
+    <color name="text_gray_round">#3d414d</color>
+    <color name="common_h2">#777777</color>
+    <color name="coment_color">#FF333333</color>
+    <color name="coment_color_66">#FFFF6666</color>
+    <color name="common_h22">#CDCDCD</color>
+    <color name="gray_55">#FF555555</color>
+    <!--通用三级标题的颜色-->
+    <color name="common_h3">#AAAAAA</color>
+    <color name="tab_color">#FFFADADC</color>
+    <color name="common_h4">#5c5c5c</color>
+    <color name="common_h5">#C1C1C1</color>
+    <color name="common_h33">#999999</color>
+    <color name="common_empty1">#8A8A8A</color>
+    <color name="common_empty">#FF8A96A3</color>
+    <color name="common_load">#33292C</color>
+    <!--窗体颜色 -->
+    <color name="windows_color">#F5F5F5</color>
+    <color name="media_edit_bg">#FF212121</color>
+    <color name="greeny">#00CB0D</color>
+    <color name="bar_color">#232325</color>
+    <color name="transgray">#33555555</color>
+    <color name="black1">#7A7E83</color>
+    <color name="black2">#ffeeeeee</color>
+    <!-- 辅助文字 -->
+    <color name="color_919191">#919191</color>
+    <color name="title_bac_color">#F5F5F5</color>
+    <color name="title_black_color">#23232b</color>
+    <color name="title_txt_color">#23232b</color>
+    <color name="import_video_thumb_mask">#FF151515</color>
+    <color name="translucent_background_75">#BF000000</color>
+    <color name="button_black_background">#424253</color>
+    <color name="import_video_thumb_bg">#FF515154</color>
+    <color name="lightgray">#c0c0c0ff</color>
+    <color name="blue">#1294F6</color>
+    <color name="text_gray2">#ffC3C3C3</color>
+    <color name="magenta">#ff6699ff</color>
+    <color name="transparent_black">#ff000000</color>
+
+    <!--F0F2F5   EEEEEE-->
+    <color name="camera_bg">#2c2c2c</color>
+    <color name="switch_bg">#FFC2C2C2</color>
+    <color name="switch_checked_bg">#FFFF6666</color>
+    <color name="camera_progress">#2980B9</color>
+    <color name="camera_progress_split">#005084</color>
+    <color name="camera_progress_three">#24ff00</color>
+    <color name="camera_progress_overflow">#1b5d89</color>
+    <color name="camera_theme_selected_bgcolor">#2980B9</color>
+    <color name="camera_bottom_press_bg">#1b1c1f</color>
+    <color name="title_background_color">#fcb840</color>
+    <color name="camera_progress_delete">#f68b2b</color>
+    <color name="translucent_background_80">#CC000000</color>
+    <color name="translucent_background_50">#7f000000</color>
+    <color name="transparent_black_60">#66000000</color>
+    <color name="transparent_black_85">#DA000000</color>
+    <color name="transparent_black_45">#73000000</color>
+    <color name="transparent_black_30">#4D000000</color>
+    <color name="transparent_black_20">#33141433</color>
+    <color name="publish_at_line">#FF434345</color>
+    <color name="main_bg_color">#e7e7e7</color>
+    <!-- 标题文字 -->
+    <color name="color_23232b">#23232b</color>
+    <color name="video_double_back">#1c1b20</color>
+    <color name="common_aaa">#AAAAAA</color>
+    <color name="title_bar_color">#FFFFFF</color>
+    <color name="viewfinder_mask">#B2000000</color>
+    <color name="tab_text_color">#999999</color>
+    <color name="purple">#884898</color>
+    <!--record-->
+    <color name="font_color_35">#DC143C</color>
+    <color name="transparent1">#7fffffff</color><!--透明白色 -->
+    <color name="transparent2">#616060</color><!--透明白色 -->
+    <color name="record_progress_black">#2c2c2c</color>
+    <color name="record_progress_bg">#2c2c2c</color>
+    <color name="record_progress_blue">#368ca8</color>
+    <color name="record_progress_pause">#2c2c2c</color>
+    <color name="record_progress_red">#e85932</color>
+    <color name="record_text_default">#ff000000</color>
+    <color name="record_text_selected">#DC143C</color>
+    <color name="record_title_white">#ffffff</color>
+    <color name="record_title_bg_default">#919191</color>
+    <color name="record_title_bg_selected">#616060</color>
+    <color name="beauty_indicator_default">#08080b</color>
+    <color name="beauty_indicator_selected">#DC143C</color>
+    <color name="config_text_bg_default">#121217</color>
+    <color name="config_text_bg_select">#414353</color>
+    <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark
+    </color>
+    <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light
+    </color>
+    <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
+    <color name="bright_foreground_disabled_material_light">#80000000</color>
+    <color name="grey_bg">#B02b2b2b</color>
+    <color name="tab_indicator_color">#FC7105</color>
+    <color name="image_bg_error">#FF9DA4AB</color>
+    <color name="image_bg">#dfbaba</color>
+    <color name="image_bg0">#c7bbb1</color>
+    <color name="image_bg1">#edd7d7</color>
+    <color name="image_bg2">#cdecdc</color>
+    <color name="image_bg3">#b0ccdc</color>
+    <color name="image_bg4">#cfacde</color>
+    <color name="image_bg5">#a1dada</color>
+    <color name="image_bg6">#e9d5ae</color>
+    <color name="media_text_bg">#80444444</color>
+    <color name="item_true_bg">#33333333</color>
+    <color name="media_selector_bg">#80ff945f</color>
+    <color name="pain_color1">#FC7105</color>
+    <color name="pain_color2">#FF0000</color>
+    <color name="item_title">#FF303030</color>
+    <color name="user_name_color">#FF576A8D</color>
+    <color name="user_blue_color">#FF0B5499</color>
+    <color name="menu_text_color">#FF555555</color>
+    <color name="menu_text_color_65">#FF656565</color>
+    <color name="index_tab_menu_text_color">#FFA6A6A6</color>
+    <drawable name="touch_bg_shape">#30000000</drawable>
+
+    <!--直播-->
+    <color name="mine_follower_bg">#77585A67</color>
+    <color name="mine_follower_bg1">#963c3f50</color>
+    <color name="gift_bg">#80100017</color>
+    <color name="live_yellow">#f2892e</color>
+    <color name="live_flollw_bg">#FFFF7700</color>
+    <color name="colorDanmuMsg">#30e7d5</color>
+    <color name="camera_video_grid_bg_color">#F3F4F6</color>
+    <!--文字白色-->
+    <color name="colorTextWhite">#FFFFFFFF</color>
+    <!--灰色-->
+    <color name="colorTextA">#FFAAAAAA</color>
+    <color name="colorText9A">#FF9A9A9A</color>
+    <color name="colorTextD3">#FFD3D3D3</color>
+
+    <color name="colorTextB">#FFBBBBBB</color>
+    <!--文字G1-->
+    <color name="colorTextC">#FFCCCCCC</color>
+
+    <color name="colorTextD">#DDDDDD</color>
+
+    <color name="colorTextLine">#DDDDDD</color>
+
+    <color name="colorLineBG">#FFF2F2F2</color>
+
+    <color name="colorTab">@color/app_style</color>
+    <!--白灰色-->
+    <color name="colorTextE">#FFEEEEEE</color>
+    <!--红色-->
+    <color name="colorRed">#FFFF3333</color>
+    <color name="colorGiftWhite">#FFFFFEFE</color>
+    <!--文字G2-->
+    <color name="colorTextG2">#FF999999</color>
+    <color name="colorTextG4">#FF858585</color>
+    <color name="colorTextG5">#FF959595</color>
+    <!--灰色-->
+    <color name="colorText5">#FF555555</color>
+
+    <color name="colorTabNoimal">#FFA6A6A6</color>
+    <!--文字G3-->
+    <color name="colorTextG6">#FF666666</color>
+    <color name="colorTextG7">#FF777777</color>
+    <color name="colorTextDB">#FFDBDBDB</color>
+    <color name="colorTextGColor7">#FFFF7777</color>
+    <color name="colorTextG8">#FF888888</color>
+    <!--文字G4-->
+    <color name="colorTextG3">#FF333333</color>
+    <!--文字black-->
+    <color name="colorTextBlack">#FF000000</color>
+    <!--gray1-->
+    <color name="colorGray1">#FFF0F0F0</color>
+    <!--light gray-->
+    <color name="colorLightGray">#FFE6E6E6</color>
+    <!--gray2-->
+    <color name="colorGray2">#FFDCDCDC</color>
+    <!--gray3-->
+    <color name="colorGray3">#FFC8C8C8</color>
+    <!--gray4-->
+    <color name="colorGray4">#FF787878</color>
+    <!--gray5-->
+    <color name="colorGray5">#FF505050</color>
+    <!--gray6-->
+    <color name="colorGray6">#FF141414</color>
+    <!--gray7-->
+    <color name="colorGray7">#FFD8D8D8</color>
+    <!--gray8-->
+    <color name="colorGray8">#FF181818</color>
+    <color name="chat_time_bg">#FFE0E0E0</color>
+    <!--green-->
+    <color name="colorGreen">#FF0accac</color>
+    <color name="pink">#f90051</color>
+    <color name="user_dialog_bg">#000000</color>
+    <color name="colorDarkTransparentGray">#a4000000</color>
+    <!--礼物数量文字颜色-->
+    <color name="color_gift_1">#555555</color>
+
+    <color name="color_gift_2">#F68B2B</color>
+    <!--金黄色-->
+    <color name="color_gift_3">#FDB100</color>
+
+    <color name="colorTransparentGray">#88ffffff</color>
+
+    <color name="line">#F2F2F2</color>
+    <color name="line_1">#DEDEDE</color>
+    <color name="line_btn">#BBBBBB</color>
+    <color name="text_gray1">#777777</color>
+    <color name="text_blue1">#1173CB</color>
+    <color name="text_blue2">#1173CA</color>
+    <color name="mine_title_subcolor">#FF404040</color>
+    <color name="app_style_sub">#FF777777</color>
+    <color name="white_line">#FFECECEC</color>
+
+    <color name="background">#F9F7F8</color>
+    <color name="background_gray1">#EBEBEB</color>
+    <color name="background_gray2">#E6E6E6</color>
+    <color name="background_gray3">#D4D4D4</color>
+    <color name="background_gray4">#EFEFF4</color>
+    <color name="panel_black">#25272A</color>
+    <color name="btn_red">#D63F41</color>
+    <color name="text_red">#FFFF0000</color>
+    <color name="btn_red_hover">#E8484B</color>
+    <color name="btn_blue">#0F73CB</color>
+    <color name="btn_blue_hover">#1E86E4</color>
+    <color name="btn_text">#FFFFFF</color>
+    <color name="btn_text_hover">#CCFFFFFF</color>
+    <!--蒙版-->
+    <color name="colorMask">#66000000</color>
+    <color name="index_item_tag">#FF7200B8</color>
+    <color name="index_item_video">#FFFA4D77</color>
+
+
+    <color name="gift_day_details_board">#FFAE00</color>
+    <color name="top_num_color">#F35263</color>
+    <color name="top_num_color_1">#FF5389</color>
+    <color name="top_num_color_60">#60F35263</color>
+    <color name="background_dark1">#ECEAEA</color>
+
+    <color name="blue_169bd5">#169BD5</color>
+    <color name="gray_f2f2f2">#F2F2F2</color>
+
+    <color name="blue_007eff">#007EFF</color>
+    <color name="gray_4a4a4a">#4A4A4A</color>
+    <color name="orange_f17171">#F17171</color>
+
+
+    <color name="index_tanle_selected">#FF5389</color>
+    <color name="call_bg">#20000000</color>
+    <color name="gray_d2d2d2">#333333</color>
+    <color name="yellow_FFC41F">#FFC41F</color>
+    <color name="gray_c7c7c7">#c7c7c7</color>
+    <color name="cp_color_gray_dark">#88000000</color>
+    <color name="gift_draw_color">#FFEC1E</color>
+    <color name="gray_fafafa">#FAFAFA</color>
+    <color name="gray_f3f3f3">#F3F3F3</color>
+    <color name="gray_fbfbfb">#FBFBFB</color>
+    <color name="vip_bg">#FE69C1</color>
+
+    <color name="red_f56671">#F56671</color>
+    <color name="red_ff7575">#FF7575</color>
+
+    <color name="main_tab_text_color">#FF6666</color>
+    <color name="main_radar_color">#FF7777</color>
+    <color name="bind_phone_tips_color">#A0A0A0</color>
+    <color name="login_gray_bg">#E5E2E4</color>
+    <color name="textB3">#FFB3B3B3</color>
+    <color name="vip_title">#FFEAB0</color>
+    <color name="fragment_bg">#F5F5F5</color>
+    <!--图片裁剪-->
+    <color name="white_translucent">#FFFFFFFF</color>
+    <color name="black_translucent">#50000000</color>
+    <color name="border">@color/white_translucent</color>
+    <color name="guideline">@color/white_translucent</color>
+    <color name="corner">@android:color/white</color>
+    <color name="surrounding_area">@color/black_translucent</color>
+    <color name="colorText75">#FFFF7575</color>
+    <color name="media_private">#17A7E6</color>
+    <color name="media_publick">#FD7575</color>
+    <!--GAME-->
+    <!-- A light Holo shade of blue -->
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <!-- A light Holo shade of green -->
+    <color name="holo_green_light">#ff99cc00</color>
+    <!-- A light Holo shade of red -->
+    <color name="holo_red_light">#ffff4444</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <!-- A dark Holo shade of green -->
+    <color name="holo_green_dark">#ff669900</color>
+    <!-- A dark Holo shade of red -->
+    <color name="holo_red_dark">#ffcc0000</color>
+    <!-- A Holo shade of purple -->
+    <color name="holo_purple">#ffaa66cc</color>
+    <!-- A light Holo shade of orange -->
+    <color name="holo_orange_light">#ffffbb33</color>
+    <!-- A dark Holo shade of orange -->
+    <color name="holo_orange_dark">#ffff8800</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="holo_blue_bright">#ff00ddff</color>
+</resources>

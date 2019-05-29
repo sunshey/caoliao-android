@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.design.widget.AppBarLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <include layout="@layout/activity_statrbar_height_layout"></include>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+                    <ImageView
+                        android:id="@+id/iv_back"
+                        style="@style/Com_nav_menubar_back_style"
+                        android:src="@drawable/ban_nav_menu_back_selector_black"
+                        android:visibility="visible"/>
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/common_h1"
+                        android:textSize="18sp"
+                        android:text=""/>
+                </RelativeLayout>
+            </android.support.design.widget.AppBarLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyer_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/dialog_text"
+                    android:gravity="center"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:textColor="@color/white"
+                    android:text="A"
+                    android:visibility="invisible"
+                    android:background="@drawable/show_head_toast_bg_shap"/>
+                <com.yc.liaolive.view.widget.SideBar
+                    android:id="@+id/sidebar"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="right"/>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

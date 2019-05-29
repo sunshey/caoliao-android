@@ -1,0 +1,47 @@
+<!-- Copyright (C) 2011 Jag Saund
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+  <item android:id="@android:id/background" >
+    <shape>
+      <corners android:radius="5dip" />
+      <gradient android:angle="270" android:centerColor="#f4d0b5"
+                android:centerY="0.75" android:endColor="#FFF2C09A"
+                android:startColor="#f4d0b5" />
+    </shape>
+  </item>
+
+  <item android:id="@android:id/progress">
+    <clip>
+      <shape>
+        <corners android:radius="5dip" />
+        <gradient android:angle="270" android:centerColor="#FD7004"
+                  android:centerY="0.75" android:endColor="#e98437"
+                  android:startColor="#FD7004" />
+      </shape>
+    </clip>
+  </item>
+  
+  <item
+    android:id="@+id/pattern"
+  >
+    <bitmap
+      android:src="@drawable/progressbar_pattern"
+      android:tileMode="repeat"
+    />
+  </item>
+</layer-list>

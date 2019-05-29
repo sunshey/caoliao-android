@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="surface_view" type="id"></item>
+    <item name="controller_view" type="id"></item>
+    <item name="cover_view" type="id"></item>
+    <item name="video_full_screen" type="id"></item>
+    <item name="video_full_view" type="id"></item>
+    <item name="video_tiny_view" type="id"></item>
+</resources>

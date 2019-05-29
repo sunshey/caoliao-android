@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.yc.liaolive.view.widget.CommenItemLayout
+        android:id="@+id/item_view_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemMoreTitleColor="@color/colorTextC"
+        app:commentShowIcon="true"
+        app:commentItemHeight="@dimen/setting_item_height"/>
+</LinearLayout>

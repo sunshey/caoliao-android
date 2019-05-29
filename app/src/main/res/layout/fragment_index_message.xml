@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.yc.liaolive.view.widget.CommentTitleView
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:commentShowBack="false"
+            app:commentShowMenu1="true"
+            app:commentMenuSrc1="@drawable/ic_chat_friend"
+            app:commentTitle="@string/mine_fragment_message_title"/>
+        <!--home_top_bar_bg_shape-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swiper_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/main_tab_height">
+                <ListView
+                    android:id="@+id/list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:dividerHeight="0dp"
+                    android:scrollbars="none"
+                    android:scrollbarSize="0dp"
+                    android:overScrollMode="never"
+                    android:divider="@color/transparent"
+                    android:duplicateParentState="true">
+                </ListView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {g
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+ext {
+    PUBLISH_GROUP_ID = 'com.kk'
+    PUBLISH_ARTIFACT_ID = 'securityhttp'
+    PUBLISH_VERSION = '1.1.6'
+}
+
+//apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.orhanobut:logger:1.15'
+    compile 'io.reactivex:rxandroid:+'
+    compile 'io.reactivex:rxjava:+'
+//    compile 'com.kk:utils:1.0.0'
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <RelativeLayout
+        android:id="@+id/view_tab_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/live_tab_msg_class_selector"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/view_btn_tab_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:lineSpacingMultiplier="1.0"
+            android:ems="1"
+            android:text="--"
+            android:textColor="@color/colorTextWhite"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:checked="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_tab_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/live_tab_msg_class_selector"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/view_btn_tab_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ems="1"
+            android:text="--"
+            android:textColor="@color/colorTextWhite"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:lineSpacingMultiplier="1.0"
+            android:checked="true"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/view_tab_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/live_tab_msg_class_selector">
+        <TextView
+            android:id="@+id/view_btn_tab_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:lineSpacingMultiplier="1.0"
+            android:ems="1"
+            android:text="--"
+            android:textColor="@color/colorTextWhite"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:checked="true"/>
+    </RelativeLayout>
+</LinearLayout>

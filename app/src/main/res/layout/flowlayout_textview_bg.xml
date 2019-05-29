@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="12dp"
+    android:paddingLeft="12dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_margin="3dp"
+    android:background="@drawable/bg_text_flow_selector"
+    android:textColor="@color/text_live_video_tag_selector"
+    android:textSize="@dimen/h7"
+    android:text="--">
+</TextView>

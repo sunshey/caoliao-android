@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/item_space_16"
+        android:paddingRight="@dimen/item_space_16"
+        android:paddingTop="@dimen/item_space_12"
+        android:paddingBottom="@dimen/item_space_12">
+        <!--头像-->
+        <RelativeLayout
+            android:id="@+id/re_user_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+            <com.yc.liaolive.view.CircleImageView
+                android:id="@+id/item_icon"
+                android:layout_width="@dimen/user_head_width"
+                android:layout_height="@dimen/user_head_width"
+                android:src="@drawable/ic_default_user_head" />
+        </RelativeLayout>
+        <!--基本信息-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/item_space_12"
+            android:layout_gravity="center_vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/item_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/coment_color"
+                    android:textSize="@dimen/h8" />
+                <TextView
+                    android:id="@+id/item_message_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/h4"
+                    android:text="00:00"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/item_last_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/h6" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="76dp"
+        android:background="@color/qian_gray" />
+</LinearLayout>

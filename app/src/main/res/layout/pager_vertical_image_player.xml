@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <!--预览图片分片容器-->
+        <com.yc.liaolive.media.view.PinchImageViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/view_image_pager">
+        </com.yc.liaolive.media.view.PinchImageViewPager>
+        <com.yc.liaolive.view.widget.LikeHeartLayout
+            android:id="@+id/heart_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.yc.liaolive.view.widget.LikeHeartLayout>
+        <!--交互控制器-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/video_controller">
+        </FrameLayout>
+        <!--广告-->
+        <com.yc.liaolive.media.view.PlayerAdLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/ad_view_layout"/>
+    </FrameLayout>
+</layout>

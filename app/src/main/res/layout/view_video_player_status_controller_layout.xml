@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--缓冲动画-->
+    <com.yc.liaolive.view.refresh.LoadingIndicatorView
+        android:id="@+id/view_loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+    <!--播放按钮-->
+    <ImageView
+        android:id="@+id/view_btn_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_private_media_play"
+        android:visibility="gone"/>
+    <!--播放进度-->
+    <ProgressBar
+        android:id="@+id/bottom_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:max="100"
+        android:visibility="gone"
+        android:progressDrawable="@drawable/video_plsyer_bottom_progress" />
+</FrameLayout>

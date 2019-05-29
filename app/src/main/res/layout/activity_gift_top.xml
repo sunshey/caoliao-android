@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.yc.liaolive.view.widget.CommentTitleView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:commentTitle="小视频礼物榜"
+            android:id="@+id/title_view"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/recycler_view"/>
+    </LinearLayout>
+</layout>

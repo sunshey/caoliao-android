@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/item_wake_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_chat_wake_call">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp">
+            <ImageView
+                android:id="@+id/item_wake_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chat_wake_icon" />
+            <TextView
+                android:id="@+id/item_wake_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发来一个视频邀请"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_chat_wake_accpet"
+        android:text="立即接通"
+        android:textColor="@color/publish_at_line"
+        android:layout_gravity="bottom|center_horizontal"
+        android:padding="6dp"
+        android:drawablePadding="3dp"
+        android:textSize="@dimen/h3" />
+</FrameLayout>

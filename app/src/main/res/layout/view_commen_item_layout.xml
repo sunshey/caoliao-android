@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/view_root_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:orientation="horizontal"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <ImageView
+            android:id="@+id/view_item_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="0"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="12dp" />
+        <TextView
+            android:id="@+id/view_item_title"
+            style="@style/SettingItemTitle"
+            android:layout_weight="0"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:id="@+id/view_more_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="@dimen/h6"
+            android:textColor="@color/colorTextG2"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="right"/>
+        <ImageView
+            android:id="@+id/view_more_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:src="@drawable/ic_mine_head_more"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+    <View
+        android:id="@+id/view_bottom_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_space_8"
+        android:visibility="gone"/>
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/qian_gray"
+        android:visibility="gone"/>
+    <View
+        android:id="@+id/view_top_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_space_8"
+        android:visibility="gone"/>
+</LinearLayout>

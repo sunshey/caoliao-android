@@ -1,0 +1,16 @@
+{
+  "From_Account": "21202953",
+  "MsgBody": [
+    {
+      "MsgContent": {
+        "Data": "{ 'cmd': 'private_media','data': {'annex_type':1, 'content':'[可爱][害羞]我是纯文本内容呢~~','id': 12153, 'file_type': 0,'img_path': 'https://ss3.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=4bc239aadda20cf45990f8df46094b0c/9d82d158ccbf6c81924a92c5b13eb13533fa4099.jpg','is_private': 1,'video_durtion': 2132413 ,'price':20}}"
+      },
+      "MsgType": "TIMCustomElem"
+    }
+  ],
+  "MsgLifeTime": 60,
+  "MsgRandom": 1287657,
+  "MsgTimeStamp": 5454457,
+  "SyncOtherMachine": 1,
+  "To_Account": "36821447"
+}

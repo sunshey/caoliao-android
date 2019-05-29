@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="98dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:descendantFocusability="afterDescendants">
+
+    <com.yc.liaolive.view.widget.RoundImageView
+        android:id="@+id/user_avatar"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginRight="12dp"
+        app:roundScaleType="centerInside"
+        app:roundShape="rect"
+        app:roundRadius="8dp"/>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@+id/user_avatar"
+        android:singleLine="true"
+        android:textColor="@color/colorContent"
+        android:drawablePadding="2dp"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        tools:text="小小仙女"/>
+
+    <TextView
+        android:id="@+id/user_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_name"
+        android:layout_marginRight="16dp"
+        android:layout_alignLeft="@+id/user_name"
+        android:singleLine="true"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/gray"
+        android:textSize="12dp"
+        tools:text="你主动，我们就会有故事"/>
+
+    <TextView
+        android:id="@+id/user_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_alignLeft="@+id/user_desc"
+        android:layout_alignBottom="@+id/user_avatar"
+        android:textColor="@color/main_tab_text_color"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:text="24岁·北京 1.5公里" />
+
+    <View
+        android:id="@+id/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="78dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorLineBG"/>
+</RelativeLayout>

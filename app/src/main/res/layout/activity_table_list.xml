@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.yc.liaolive.view.widget.CommentTitleView
+                android:id="@+id/title_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorTextWhite">
+                <com.androidkun.xtablayout.XTabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:xTabIndicatorColor="@color/coment_color_66"
+                    android:layout_centerInParent="true"
+                    app:xTabIndicatorHeight="3dp"
+                    app:xTabSelectedTextSize="@dimen/h8"
+                    app:xTabTextSize="@dimen/h8"
+                    app:xTabSelectedTextColor="@color/coment_color_66"
+                    app:xTabTextColor="@color/coment_color"
+                    app:xTabIndicatorWidth="40dp"
+                    app:xTabPaddingStart="50dp"
+                    app:xTabPaddingEnd="50dp"
+                    app:tabTextAppearance="@style/TabLayoutTextAppearance"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/view_pager">
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+</layout>

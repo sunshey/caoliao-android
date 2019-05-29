@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid android:color="@color/transparent"></solid>
+    <!-- 内边距 -->
+    <padding android:left="2dp" android:right="2dp" android:top="2dp" android:bottom="2dp"/>
+    <!-- 圆角  radius圆角的弧度 -->
+    <corners android:bottomLeftRadius="2dp" android:bottomRightRadius="2dp" android:topLeftRadius="2dp" android:topRightRadius="2dp"></corners>
+	<!-- 边框  width边框粗细   color边框颜色-->
+	<stroke android:width="0.5dp" android:color="@color/gray_qian"/>
+</shape>

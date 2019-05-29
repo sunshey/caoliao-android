@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/message_live_bg"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="23dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <com.yc.liaolive.view.widget.CircleRadarLayout
+                android:id="@+id/radar_layout"
+                android:layout_width="41dp"
+                android:layout_height="41dp"
+                android:layout_gravity="center"
+                app:radarColor="#6488dc"
+                app:radarIntervalDurtion="999"
+                app:radarIsAutoRun="true"
+                app:radarIconSrc="@drawable/message_live_play"
+                app:radarMinAlpha="0"
+                app:radarPlayDurtion="3000">
+            </com.yc.liaolive.view.widget.CircleRadarLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="点击进入"
+                android:textSize="@dimen/h4"
+                android:textColor="#6588dc" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!--login_type : 登录背景视频 登录背景图片-->
+    <string name="login_type">login_image</string>
+</resources>

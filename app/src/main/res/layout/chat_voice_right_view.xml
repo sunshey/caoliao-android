@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/view_msg_durtion"
+        android:layout_toLeftOf="@+id/ll_msg_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/colorTextG3"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true" />
+    <LinearLayout
+        android:id="@+id/ll_msg_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_voice_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/voice_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_msg_content"
+        android:layout_alignLeft="@+id/ll_msg_content"
+        android:textColor="@color/colorTextA"
+        android:textSize="@dimen/h5"
+        android:text=""/>
+</RelativeLayout>

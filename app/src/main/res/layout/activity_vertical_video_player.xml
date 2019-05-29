@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionName="@string/transition_movie_img">
+        <com.yc.liaolive.media.view.VerticalViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/vertical_view_pager">
+        </com.yc.liaolive.media.view.VerticalViewPager>
+    </android.support.constraint.ConstraintLayout>
+</layout>

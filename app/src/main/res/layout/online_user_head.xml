@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="12dp">
+
+    <TextView
+        android:id="@+id/left_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#c9c9c9"
+        android:textSize="11dp"
+        android:gravity="center"
+        tools:text="剩余失败次数：5次"/>
+
+    <LinearLayout
+        android:id="@+id/left_timeLy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#c9c9c9"
+            android:textSize="10dp"
+            android:text="距下次视频邀请时间:"/>
+
+        <TextView
+            android:id="@+id/left_time"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red_ff7575"
+            android:textSize="11dp"
+            android:gravity="center"
+            tools:text="60"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#c9c9c9"
+            android:textSize="11dp"
+            android:text="秒"/>
+    </LinearLayout>
+
+</LinearLayout>

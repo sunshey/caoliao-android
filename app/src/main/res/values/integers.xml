@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="theme_version">
+        <item>0</item> <!-- THEME_MUSIC_ASSETS MusicAssets.zip-->
+        <item>0</item> <!-- THEME_EMPTY Empty.zip-->
+        <item>1</item> <!-- THEME_VIDEO_COMMON Common.zip-->
+        <item>0</item> <!-- THEME_FILTER_ASSETS FilterAssets.zip-->
+        <item>1</item> <!-- THEME_MUSIC_VIDEO_ASSETS MusicVideoAssets.zip-->
+    </integer-array>
+    <integer name="loading_frame_interval">60</integer>
+    <integer name="media_private_interval">19</integer>
+    <integer name="refresh_anmi_durtion">80</integer>
+    <integer name="live_item_anmi_durtion">100</integer>
+    <integer name="live_anmi_durtion">120</integer>
+    <integer name="live_anmi_expand">500</integer>
+    <integer name="loading_anmi_durtion">60</integer>
+    <integer name="heart_anim_bezier_factor">6</integer>
+    <integer name="anim_duration">1000</integer>
+</resources>

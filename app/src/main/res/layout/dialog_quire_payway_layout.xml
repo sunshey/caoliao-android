@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/diallog_bg_white">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择支付方式"
+            android:textSize="@dimen/h7"
+            android:textStyle="bold"
+            android:textColor="@color/gray_55"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp">
+            <com.yc.liaolive.recharge.view.PayChanlSelectedLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_pay_channel">
+            </com.yc.liaolive.recharge.view.PayChanlSelectedLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

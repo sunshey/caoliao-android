@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="index_item_panding">4dp</dimen>
+    <dimen name="index_cover_width">55dp</dimen>
+    <dimen name="index_cover_height">60dp</dimen>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp">
+        <ImageView
+            android:id="@+id/view_user_head"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/ic_default_user_head"
+            android:background="@drawable/pay_user_bg_shape"
+            android:padding="1.8dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/view_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/view_user_head"
+            android:layout_marginLeft="18dp"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            tools:text="昵称"/>
+
+        <TextView
+            android:id="@+id/view_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/view_user_name"
+            android:layout_below="@+id/view_user_name"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:text="每分钟的收入0/钻石"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/view_tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:text=""
+        android:gravity="center"
+        android:paddingLeft="37dp"
+        android:paddingRight="37dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:background="@drawable/tv_transbg_toast_shape"
+        android:visibility="invisible"/>
+
+    <FrameLayout
+        android:id="@+id/view_call_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:visibility="gone"
+        android:background="@drawable/tv_transbg_toast_shape">
+        <TextView
+            android:id="@+id/pw_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:gravity="center"
+            android:text="@string/call_camera_tips"
+            android:textSize="14dp"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/white"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="45dp">
+
+        <TextView
+            android:id="@+id/btn_accept"
+            android:layout_width="105dp"
+            android:layout_height="58dp"
+            android:text="接听"
+            android:textSize="@dimen/h6"
+            android:textColor="@color/white"
+            android:background="@drawable/call_receive_btn"
+            android:gravity="center"
+            android:drawableLeft="@drawable/call_receive_icon"/>
+
+        <TextView
+            android:id="@+id/btn_reject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="取消"
+            android:textSize="@dimen/h6"
+            android:textColor="@color/white"
+            android:background="@drawable/call_reject_btn"
+            android:gravity="center"
+            android:drawableLeft="@drawable/call_reject_icon"/>
+
+    </LinearLayout>
+</FrameLayout>

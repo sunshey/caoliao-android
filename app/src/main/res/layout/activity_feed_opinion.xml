@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.yc.liaolive.view.widget.CommentTitleView
+            android:id="@+id/commentTitleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:commentTitle="@string/setting_feedback" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/item_space_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="356dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:hint="如果有任何问题或者意见建议，请通过下面的表单与我们联系，我们收到后将尽快回复"
+                        android:padding="@dimen/item_space_10"
+                        android:textSize="@dimen/sp_14" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray_f2f2f2" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_add_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/item_space_10">
+
+                        <LinearLayout
+                            android:layout_width="74dp"
+                            android:layout_height="74dp"
+                            android:background="@drawable/feed_back_bg"
+                            android:gravity="center">
+
+                            <ImageView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/feed_back_add" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_show"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="@dimen/item_space_10" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:gravity="center_vertical"
+                    android:text="我们如何联系你（电话或QQ等在线联系方式均可）" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="@dimen/item_space_10">
+
+                    <EditText
+                        android:id="@+id/et_phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:background="@drawable/feed_opinion_phone_bg"
+                        android:inputType="phone|number"
+                        android:paddingLeft="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_alignParentBottom="true"
+                android:background="@color/app_style"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h10" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</layout>

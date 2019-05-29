@@ -1,0 +1,113 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="base_header_activity_slide_more">45dp</dimen>
+    <dimen name="home_header_size">230dp</dimen>
+    <dimen name="nav_bar_height">56dp</dimen>
+    <dimen name="nav_bar_height_more">58dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="statusbar_view_height">0dp</dimen>
+    <dimen name="config_text_size">14sp</dimen>
+    <dimen name="config_text_padding">5dp</dimen>
+    <dimen name="config_text_type_width">80dp</dimen>
+    <dimen name="config_text_width">60dp</dimen>
+    <dimen name="comment_title_height">44dp</dimen>
+    <dimen name="home_video_item_height">266dp</dimen>
+    <dimen name="home_video_min_item_height">170dp</dimen>
+    <dimen name="top_bar_menu_padding">12dp</dimen>
+    <dimen name="top_title_bar_height">45dp</dimen>
+    <dimen name="live_btn_size">40.6dp</dimen>
+    <dimen name="live_btn_gift">40.6dp</dimen>
+    <!-- 飘星 -->
+    <dimen name="heart_anim_bezier_x_rand">50.0dp</dimen>
+    <dimen name="heart_anim_init_x">50.0dp</dimen>
+    <dimen name="heart_anim_init_y">25.0dp</dimen>
+    <dimen name="heart_anim_length">100.0dp</dimen>
+    <dimen name="heart_anim_length_rand">350.0dp</dimen>
+    <dimen name="heart_anim_x_point_factor">30.0dp</dimen>
+    <dimen name="heart_size_height">27.3dp</dimen>
+    <dimen name="heart_size_width">32.5dp</dimen>
+    <dimen name="member_heart_layout_bottom_margin">50dp</dimen>
+
+    <dimen name="line_height">0.5dp</dimen>
+    <dimen name="list_item_height">0.3dp</dimen>
+
+    <dimen name="t1">36sp</dimen>
+    <dimen name="t2">34sp</dimen>
+    <dimen name="t3">32sp</dimen>
+    <dimen name="t4">28sp</dimen>
+    <dimen name="t5">24sp</dimen>
+    <!--大小-->
+    <!--h1-->
+    <dimen name="h1">9dp</dimen>
+    <dimen name="h111">8dp</dimen>
+    <!--h2-->
+    <dimen name="h2">10dp</dimen>
+    <!--h3-->
+    <dimen name="h3">11dp</dimen>
+    <!--h4-->
+    <dimen name="h4">12dp</dimen>
+    <!--h5-->
+    <dimen name="h5">13dp</dimen>
+    <!--h6-->
+    <dimen name="h6">14dp</dimen>
+    <!--h7-->
+    <dimen name="h7">15dp</dimen>
+    <!--h8-->
+    <dimen name="h8">16dp</dimen>
+    <!--h9-->
+    <dimen name="h9">17dp</dimen>
+    <!--h10-->
+    <dimen name="h10">18dp</dimen>
+    <!--h11-->
+    <dimen name="h11">19dp</dimen>
+
+    <dimen name="h12">20dp</dimen>
+    <dimen name="h26">26dp</dimen>
+    <dimen name="h30">30dp</dimen>
+
+    <dimen name="sp_12">@dimen/h4</dimen>
+    <dimen name="sp_14">@dimen/h6</dimen>
+    <dimen name="sp_16">@dimen/h8</dimen>
+
+
+    <dimen name="dp_1_8">1.8dp</dimen>
+    <dimen name="dp_3_6">3.6dp</dimen>
+
+    <dimen name="title">18dp</dimen>
+
+    <dimen name="header_drawable_height" >200dp</dimen>
+    <dimen name="mine_item_space">10dp</dimen>
+    <dimen name="index_item_panding">8dp</dimen>
+    <dimen name="index_cover_width">60dp</dimen>
+    <dimen name="index_cover_height">65dp</dimen>
+    <dimen name="person_item_height">43dp</dimen>
+    <!--一般Item高度-->
+    <dimen name="item_height">45dp</dimen>
+    <dimen name="setting_item_height">48dp</dimen>
+    <dimen name="user_head_width">48dp</dimen>
+    <dimen name="main_tab_height">48dp</dimen>
+
+    <dimen name="item_space_10">10dp</dimen>
+    <dimen name="item_space_12">12dp</dimen>
+    <dimen name="item_space_15">15dp</dimen>
+    <dimen name="item_space_16">16dp</dimen>
+    <dimen name="item_space_20">20dp</dimen>
+    <dimen name="item_space_60">60dp</dimen>
+    <dimen name="item_space_120">120dp</dimen>
+    <dimen name="item_space_8">8dp</dimen>
+    <dimen name="item_space_5">5dp</dimen>
+    <dimen name="item_space_6">6dp</dimen>
+    <dimen name="item_space_4">4dp</dimen>
+    <!--图片裁剪-->
+    <dimen name="border_thickness">1dp</dimen>
+    <dimen name="corner_thickness">3dp</dimen>
+    <dimen name="guideline_thickness">1px</dimen>
+    <dimen name="target_radius">24dp</dimen>
+    <dimen name="snap_radius">3dp</dimen>
+    <dimen name="corner_length">20dp</dimen>
+</resources>

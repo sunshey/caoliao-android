@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yc.liaolive.view.widget.AutoBannerLayout
+        android:id="@+id/view_index_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:bannerScaleType="centerCrop"
+        app:bannerIndicatorHeight="6dp"
+        app:bannerIndicatorWidth="6dp"
+        app:bannerIndicatorMargin="5dp"
+        app:bannerIndicatorSelected="@drawable/arice_white_dot"
+        app:bannerIndicatorUnselected="@drawable/arice_white_nomil_dot"
+        app:bannerRollDurtion="5000"
+        app:bannerShowIndicator="true" />
+</FrameLayout>

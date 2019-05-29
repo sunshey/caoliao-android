@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout
+        android:id="@+id/root_view"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@android:color/black">
+        <com.yc.liaolive.view.clipimage.ClipImageView
+            android:id="@+id/clip_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:civClipCircle="false"
+            app:civClipPadding="50dp"
+            app:civClipRoundCorner="0dp"
+            app:civHeight="2"
+            app:civMaskColor="@color/viewfinder_mask"
+            app:civWidth="3"/>
+        <RelativeLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@id/bottom"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/btn_nav_close_white"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/h8"
+                android:text="--"/>
+            <ImageView
+                android:id="@+id/clip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:visibility="visible"
+                android:src="@drawable/ban_nav_menu_submit_white"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

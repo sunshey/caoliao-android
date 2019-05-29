@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- aar用到的-->
+    <external-path name="51xianwan" path="51xianwan" />
+    <files-path  name="downloads" path="downloads"/>
+    <!--项目中用到的-->
+
+    <paths xmlns:android="http://schemas.android.com/apk/res/android">
+        <external-path name="download" path=""/>
+        <!--
+        <files-path/>代表的根目录： Context.getFilesDir()
+        <external-path/>代表的根目录: Environment.getExternalStorageDirectory()
+        <cache-path/>代表的根目录: getCacheDir()
+        -->
+    </paths>
+</resources>

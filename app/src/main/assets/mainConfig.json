@@ -1,0 +1,331 @@
+[
+  [
+    {
+      "height": "0",
+      "img_url": "",
+      "show_index": "3",
+      "son_page": [
+        {
+          "height": "0",
+          "img_url": "",
+          "show_index": "0",
+          "son_page": [
+            {
+              "height": "0",
+              "img_url": "",
+              "show_index": "0",
+              "son_page": [],
+              "target_id": "8",
+              "text": "推荐",
+              "type": "0",
+              "width": "0"
+            },
+            {
+              "height": "0",
+              "img_url": "",
+              "show_index": "0",
+              "son_page": [],
+              "target_id": "9",
+              "text": "最新",
+              "type": "0",
+              "width": "0"
+            },
+            {
+              "height": "0",
+              "img_url": "",
+              "show_index": "0",
+              "son_page": [],
+              "target_id": "11",
+              "text": "热门",
+              "type": "0",
+              "width": "0"
+            }
+          ],
+          "target_id": "7",
+          "text": "小视频",
+          "type": "0",
+          "width": "0"
+        },
+        {
+          "height": "0",
+          "img_url": "",
+          "show_index": "1",
+          "son_page": [],
+          "target_id": "6",
+          "text": "1v1快聊",
+          "type": "0",
+          "width": "0"
+        },
+        {
+          "height": "0",
+          "img_url": "",
+          "show_index": "0",
+          "son_page": [
+            {
+              "height": "0",
+              "img_url": "",
+              "show_index": "0",
+              "son_page": [],
+              "target_id": "13",
+              "text": "推荐",
+              "type": "0",
+              "width": "0"
+            },
+            {
+              "height": "0",
+              "img_url": "",
+              "show_index": "0",
+              "son_page": [],
+              "target_id": "14",
+              "text": "最新",
+              "type": "0",
+              "width": "0"
+            }
+          ],
+          "target_id": "12",
+          "text": "图片",
+          "type": "0",
+          "width": "0"
+        }
+      ],
+      "target_id": "1",
+      "text": "首页",
+      "type": "0",
+      "width": "0"
+    },
+    {
+      "height": "0",
+      "img_url": "",
+      "show_index": "0",
+      "son_page": [],
+      "target_id": "2",
+      "text": "关注",
+      "type": "0",
+      "width": "0"
+    },
+    {
+      "height": "0",
+      "img_url": "http://zbtest.6071.com/uploads/images/20180727/318de31787d2db12b94334db23a39dec.png",
+      "show_index": "0",
+      "son_page": [],
+      "target_id": "3",
+      "text": "1v1",
+      "type": "1",
+      "width": "100"
+    },
+    {
+      "height": "0",
+      "img_url": "",
+      "show_index": "0",
+      "son_page": [],
+      "target_id": "4",
+      "text": "消息",
+      "type": "0",
+      "width": "0"
+    },
+    {
+      "height": "0",
+      "img_url": "",
+      "show_index": "0",
+      "son_page": [],
+      "targaet_id": "5",
+      "text": "我的",
+      "type": "0",
+      "width": "0"
+    }
+  ],
+  [
+    {
+      "height": "0",
+      "icon": "http://t.tn990.com/upload/friends.png",
+      "icon_check": "http://t.tn990.com/upload/friends-check.png",
+      "img_url": "",
+      "show_index": "0",
+      "son_page": [
+        {
+          "height": "0",
+          "img_url": "",
+          "show_index": "0",
+          "son_page": [],
+          "target_id": "11",
+          "text": "推荐",
+          "type": "0",
+          "width": "0"
+        },
+        {
+          "height": "0",
+          "img_url": "",
+          "show_index": "0",
+          "target_id": "12",
+          "text": "附近",
+          "type": "0",
+          "width": "0"
+        },
+        {
+          "height": "0",
+          "img_url": "",
+          "show_index": "0",
+          "target_id": "22",
+          "text": "ASMR",
+          "type": "0",
+          "width": "0"
+        },
+        {
+          "height": "0",
+          "img_url": "",
+          "show_index": "0",
+          "son_page": [
+            {
+              "filter_type": "4",
+              "height": "0",
+              "img_url": "",
+              "show_index": "0",
+              "son_page": [],
+              "target_id": "131",
+              "text": "推荐",
+              "type": "0",
+              "width": "0"
+            },
+            {
+              "filter_type": "0",
+              "height": "0",
+              "img_url": "",
+              "show_index": "1",
+              "son_page": [],
+              "target_id": "131",
+              "text": "最新",
+              "type": "0",
+              "width": "0"
+            }
+          ],
+          "target_id": "13",
+          "text": "视频",
+          "type": "0",
+          "width": "0"
+        },
+        {
+          "height": "0",
+          "img_url": "",
+          "show_index": "0",
+          "son_page": [],
+          "target_id": "15",
+          "text": "关注",
+          "type": "0",
+          "width": "0"
+        }
+      ],
+      "target_id": "1",
+      "text": "交友",
+      "type": "0",
+      "width": "0"
+    },
+    {
+      "height": "0",
+      "icon": "http://t.tn990.com/upload/asmr.png",
+      "icon_check": "http://t.tn990.com/upload/asmr-check.png",
+      "img_url": "",
+      "show_index": "0",
+      "son_page": [
+        {
+          "filter_type": "1",
+          "height": "0",
+          "img_url": "",
+          "show_index": "0",
+          "son_page": [
+            {
+              "height": "0",
+              "img_url": "",
+              "show_index": "0",
+              "son_page": [],
+              "target_id": "22",
+              "text": "推荐",
+              "type": "0",
+              "width": "0",
+              "filter_type":"3"
+            }
+          ],
+          "target_id": "27",
+          "text": "视频",
+          "type": "0",
+          "width": "0"
+        },
+        {
+          "filter_type": "1",
+          "height": "0",
+          "img_url": "",
+          "show_index": "0",
+          "son_page": [
+            {
+              "height": "0",
+              "img_url": "",
+              "show_index": "0",
+              "son_page": [],
+              "target_id": "25",
+              "text": "推荐",
+              "type": "0",
+              "width": "0",
+              "filter_type":"4"
+            },
+            {
+              "height": "0",
+              "img_url": "",
+              "show_index": "0",
+              "son_page": [],
+              "target_id": "25",
+              "text": "最热",
+              "type": "0",
+              "width": "0",
+              "filter_type":"1"
+            }
+          ],
+          "target_id": "28",
+          "text": "音频",
+          "type": "0",
+          "width": "0"
+        }
+      ],
+      "target_id": "2",
+      "text": "ASMR",
+      "type": "0",
+      "width": "100"
+    },
+    {
+      "height": "0",
+      "icon": "http://t.tn990.com/upload/message.png",
+      "icon_check": "http://t.tn990.com/upload/message-check.png",
+      "img_url": "",
+      "show_index": "0",
+      "son_page": [],
+      "target_id": "3",
+      "text": "消息",
+      "type": "0",
+      "width": "0"
+    },
+    {
+      "height": "0",
+      "icon": "http://a.tn990.com/upload/xiaoedai.png",
+      "icon_check": "http://a.tn990.com/upload/xiaoedai_check.png",
+      "img_url": "",
+      "open_url": "http://u.wk990.com/loanbox/index.html?agent_id=122",
+      "show_index": "0",
+      "son_page": [],
+      "sub_title": "",
+      "target_id": "23",
+      "text": "小额贷",
+      "type": "0",
+      "width": "0"
+    },
+    {
+      "height": "0",
+      "icon": "http://t.tn990.com/upload/mine.png",
+      "icon_check": "http://t.tn990.com/upload/mine-check.png",
+      "img_url": "",
+      "show_index": "0",
+      "son_page": [],
+      "target_id": "4",
+      "text": "我的",
+      "type": "0",
+      "width": "0"
+    }
+  ]
+]

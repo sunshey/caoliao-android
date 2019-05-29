@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout >
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.yc.liaolive.view.layout.NoScrollViewPager
+            android:id="@+id/vp_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.yc.liaolive.view.layout.NoScrollViewPager>
+        <com.yc.liaolive.index.view.MainTabItem
+            android:id="@+id/ll_bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_tab_height"
+            android:layout_gravity="bottom">
+        </com.yc.liaolive.index.view.MainTabItem>
+        <com.yc.liaolive.view.layout.DataChangeView
+            android:id="@+id/loading_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</layout>

@@ -1,0 +1,9 @@
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="90"
+    android:toDegrees="90">
+    <shape android:shape="rectangle">
+        <solid android:color="@android:color/transparent"/>
+        <size android:width="15dp"
+            android:height="15dp"/>
+    </shape>
+</rotate>

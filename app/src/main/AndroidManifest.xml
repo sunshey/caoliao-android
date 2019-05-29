@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yc.liaolive"
+    android:installLocation="preferExternal">
+    <permission
+        android:name="${GETUIUSESPERMISSION}"
+        android:protectionLevel="signature" />
+    <!--视频合并的私有权限-->
+    <permission
+        android:name="${VIDEOPERMISSION}"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.MANAGE_LOCATION_POLICY" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 短信验证码必须 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_SINTERNETWIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!--个推权限-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 个推3.0电子围栏功能所需权限 -->
+    <!-- 位置 GPS、WIFI -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!--VISIBILITY_HIDDEN表示不显示任何通知栏提示的权限-->
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <!--DownloadManager-->
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+
+    <!--七牛-->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!--主播端-悬浮窗-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!--锁屏下弹窗所需-->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <!--点亮屏幕所需-->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <!-- DownloadManager -->
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true"
+        android:anyDensity="true"/>
+
+    <application
+        android:name="com.yc.liaolive.VideoApplication"
+        android:alwaysRetainTaskState="true"
+        android:anyDensity="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:normalScreens="true"
+        android:persistent="true"
+        android:screenOrientation="portrait"
+        android:smallScreens="true"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:allowBackup="false"
+        tools:replace="android:allowBackup"
+        android:theme="@style/AppTheme">
+        <!--HTTP-->
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <!--开屏-->
+        <activity
+            android:name=".start.ui.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StartAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.TextActivity"
+            android:screenOrientation="portrait"/>
+        <!--主页-->
+        <activity
+            android:name="com.yc.liaolive.index.ui.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+            </intent-filter>
+        </activity>
+        <!--通用的参数接收界面-->
+        <activity
+            android:name="com.yc.liaolive.ui.activity.H5ParamsActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <data android:scheme="${scheme}"
+                      android:host="huayanzhima"/>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <!--垂直的视频列表播放界面-->
+        <!-- 图片裁剪 -->
+        <activity
+            android:name="com.yc.liaolive.media.ui.activity.ClipImageActivity"
+            android:screenOrientation="portrait" />
+        <!-- 图片拍摄 -->
+        <activity
+            android:name="com.yc.liaolive.media.ui.activity.MediaPictruePhotoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 粉丝与关注 -->
+        <activity
+            android:name="com.yc.liaolive.ui.activity.ContentFragmentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.caoliao.media.topic" />    <!-- 自定义的action-->
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" /><!--必须加上这个，否则下面无法直接使用自定的action-->
+                <category android:name="caoliao.topic.category" />
+            </intent-filter>
+        </activity>
+        <!-- WEB界面 -->
+        <activity
+            android:name="com.yc.liaolive.webview.ui.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <!--LOAN-WEB-->
+        <activity android:name=".webview.ui.WebLoanActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 本地视频列表 -->
+        <activity
+            android:name="com.yc.liaolive.media.ui.activity.MediaLocationVideoListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.caoliao.media.locationvideo" />    <!-- 自定义的action-->
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" /><!--必须加上这个，否则下面无法直接使用自定的action-->
+                <category android:name="caoliao.location.category" />
+            </intent-filter>
+        </activity>
+        <!--本地音频-->
+        <activity android:name="com.yc.liaolive.media.ui.activity.MediaLocationAudioEditActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <!--单张图片预览-->
+        <activity
+            android:name="com.yc.liaolive.media.ui.activity.MediaImageSingerPreviewActivity"
+            android:screenOrientation="portrait" />
+        <!-- 大图片预览 -->
+        <activity
+            android:name="com.yc.liaolive.media.ui.activity.MediaImageListPreviewActivity"
+            android:screenOrientation="portrait" />
+        <!--第三方账号注册-->
+        <activity
+            android:name=".ui.activity.RegisterOtherActivity"
+            android:screenOrientation="portrait" />
+        <!--用户中心-->
+        <!--用户手机号码注册-->
+        <activity
+            android:name=".ui.activity.RegisterPhoneActivity"
+            android:screenOrientation="portrait" />
+        <!--视频推流-->
+        <activity
+            android:name="com.yc.liaolive.live.ui.activity.LiveRoomPusherActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!--视频通话-->
+        <activity android:name=".videocall.ui.activity.LiveCallActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!--推流-->
+        <activity
+            android:name="com.yc.liaolive.live.ui.activity.LiveRoomPullActivity"
+            android:screenOrientation="portrait" />
+        <!--ASMR直播间-->
+        <activity android:name=".live.ui.activity.AsmrRoomPullActivity"
+            android:screenOrientation="portrait"/>
+        <!--搜索-->
+        <activity
+            android:name=".search.ui.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <activity
+            android:name=".ui.activity.VideoActivity"
+            android:screenOrientation="portrait" />
+        <!--版本更新-->
+        <activity android:name=".start.ui.BuildManagerActivity"
+            android:theme="@style/ActivityCenterDialogAnimation"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <!--互踢-->
+        <activity
+            android:name=".ui.activity.OfflineTipsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityCenterDialogAnimation" />
+        <!--聊天图片预览界面-->
+        <activity
+            android:name=".msg.ui.activity.ImagePreviewActivity"
+            android:screenOrientation="portrait" />
+        <!--聊天界面-->
+        <activity
+            android:name=".msg.ui.activity.ChatActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <!--好友详情-->
+        <activity
+            android:name=".msg.ui.activity.ProfileActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!--群相关-->
+        <activity
+            android:name=".msg.ui.activity.GroupProfileActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!--添加好友-->
+        <activity
+            android:name=".msg.ui.activity.AddFriendActivity"
+            android:screenOrientation="portrait" />
+        <!--好友选择-->
+        <activity
+            android:name=".msg.ui.activity.ChooseFriendActivity"
+            android:screenOrientation="portrait" />
+        <!--申请加入群聊-->
+        <activity
+            android:name=".msg.ui.activity.ApplyGroupActivity"
+            android:screenOrientation="portrait" />
+        <!--群成员列表-->
+        <activity
+            android:name=".msg.ui.activity.GroupMemberActivity"
+            android:screenOrientation="portrait" />
+        <!--群成员资料-->
+        <activity
+            android:name=".msg.ui.activity.GroupMemberProfileActivity"
+            android:screenOrientation="portrait" />
+        <!--文字编辑-->
+        <activity
+            android:name=".msg.ui.activity.EditActivity"
+            android:screenOrientation="portrait" />
+        <!--基本信息补全-->
+        <activity
+            android:name=".user.ui.UserDataComplementActivity"
+            android:screenOrientation="portrait" />
+        <!--设置中心-->
+        <activity
+            android:name=".user.ui.SettingActivity"
+            android:screenOrientation="portrait" />
+        <!--用户相关的好友-->
+        <activity
+            android:name=".user.ui.AttachFirendActivity"
+            android:screenOrientation="portrait" />
+        <!--充值、消费明细-->
+        <!--积分榜单-->
+        <activity
+            android:name=".ui.activity.IntegralTopListActivity"
+            android:screenOrientation="portrait" />
+        <!--用户中心-->
+        <activity
+            android:name=".user.ui.PersonCenterActivity"
+            android:screenOrientation="portrait" />
+        <!--明细详情-->
+        <activity
+            android:name=".ui.activity.WaterDetailsActivity"
+            android:screenOrientation="portrait" />
+        <!--绑定手机号-->
+        <activity android:name=".user.ui.BindPhoneTaskActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+        <!--私密小视频-->
+        <activity android:name=".media.ui.activity.PrivateMediaVideoActivity"
+            android:screenOrientation="portrait"/>
+        <!--私密相册-->
+        <activity android:name=".media.ui.activity.PrivateMediaPhotoActivity"
+            android:screenOrientation="portrait"/>
+        <!--本地相册列表-->
+        <activity android:name=".media.ui.activity.MediaLocationImageListActivity"
+            android:screenOrientation="portrait"/>
+        <!--本地图片选择，单选-->
+        <activity android:name=".media.ui.activity.MediaLocationImageListSingerActivity"
+            android:screenOrientation="portrait"/>
+        <!--本地选中的相册预览-->
+        <activity android:name=".media.ui.activity.MediaLocationImageListPreviewActivity"
+            android:screenOrientation="portrait"/>
+        <!--垂直上下滑动视频播放器-->
+        <activity android:name=".media.ui.activity.VerticalVideoPlayerAvtivity"
+            android:screenOrientation="portrait"/>
+        <!--水平滚动预览相册-->
+        <activity android:name=".media.ui.activity.VerticalImagePreviewActivity"
+            android:screenOrientation="portrait"/>
+        <!--可垂直滑动的直播间-->
+        <activity android:name=".live.ui.activity.VerticalRoomPullAvtivity"
+            android:screenOrientation="portrait"/>
+        <!--在线主播-->
+        <activity android:name=".media.ui.activity.VerticalAnchorPlayerAvtivity"
+            android:screenOrientation="portrait"/>
+        <!--本地视频预览-->
+        <activity android:name=".media.ui.activity.MediaLocationVideoPriviewActivity"
+            android:screenOrientation="portrait"/>
+        <!--本地视频封面选取-->
+        <activity android:name=".media.ui.activity.MediaLocationVideoFrameActivity"
+            android:screenOrientation="portrait"/>
+        <!--本地视频描述信息编辑-->
+        <activity android:name=".media.ui.activity.MediaLocationVideoEditActivity"
+            android:screenOrientation="portrait"/>
+        <!--图片裁剪-->
+        <activity android:name=".media.ui.activity.CropImageActivity"
+            android:screenOrientation="portrait"/>
+        <!--视频通话界面的充值-->
+        <activity android:name=".videocall.ui.activity.CallRechargeActivity"
+            android:theme="@style/PopActivityDialogStyle"
+            android:screenOrientation="portrait"/>
+        <!--视频通话-唤醒充值界面-->
+        <activity android:name=".videocall.ui.activity.CallWakeRechargeActivity"
+            android:theme="@style/PopActivityDialogStyle"
+            android:screenOrientation="portrait"/>
+        <!--资料编辑-->
+        <activity
+            android:name=".user.ui.ModifyUserInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyCityStyle" />
+        <!--单个修改用户基本信息-->
+        <activity android:name=".user.ui.ModifyDataInfoActivity"
+            android:screenOrientation="portrait"/>
+        <!--主播认证-->
+        <activity
+            android:name=".user.ui.UserAuthenticationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyCityStyle"/>
+        <!--钻石充值、会员购买-->
+        <activity
+            android:name=".recharge.ui.VipActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!--充值-->
+        <activity android:name=".recharge.ui.WebPayActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!--多媒体文件积分榜单-->
+        <activity android:name=".media.ui.activity.MediaGiftTopActivity"
+            android:screenOrientation="portrait"/>
+        <!--视频通话、唤醒-->
+        <activity android:name=".videocall.ui.activity.CallWakeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!--直播间任务-->
+        <activity android:name=".live.ui.activity.RoomTaskActivity"
+            android:theme="@style/ActivityButtomDialogAnimation"
+            android:screenOrientation="portrait"/>
+        <!--消息,会话列表-->
+        <activity android:name=".msg.ui.activity.ChatConversationActivity"
+            android:theme="@style/ActivityButtomDialogAnimation"
+            android:screenOrientation="portrait"/>
+        <!--聊天绑定手机号码-->
+        <activity
+            android:name=".ui.activity.LiteBindPhoneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityCenterDialogAnimation" />
+        <!--我的钱包-->
+        <activity android:name=".user.ui.NotecaseActivity"
+            android:screenOrientation="portrait"/>
+        <!--钻石明细-->
+        <activity android:name=".user.ui.DiamondDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <!--积分明细-->
+        <activity android:name=".user.ui.IntegralDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <!--预约、视频通话 明细-->
+        <activity android:name=".user.ui.MakeCallDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <!--芝麻认证-->
+        <activity android:name=".user.ui.ZhimaAuthentiActivity"
+            android:screenOrientation="portrait"/>
+        <!--开始芝麻认证-->
+        <activity
+            android:name=".user.ui.ZhimaAuthentiResultActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--芝麻认证结果-->
+        <activity
+            android:name=".user.ui.ZhimaAuthentiWebActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--VIP签到奖励-->
+        <activity android:name="com.yc.liaolive.user.ui.VipRewardActivity"
+            android:theme="@style/ActivityCenterDialogAnimation"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <!--音频播放器-->
+        <activity android:name=".music.activity.MusicPlayerActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <!--全局的视频来电处理-->
+        <service android:name=".service.VideoCallListenerService"
+            android:exported="true">
+        </service>
+        <!--APK下载服务-->
+        <service
+            android:name="com.yc.liaolive.start.service.DownLoadService"
+            android:exported="false" />
+        <!--礼物素材准备-->
+        <service
+            android:name="com.yc.liaolive.service.GiftResourceServer"
+            android:exported="false" />
+        <!--百度定位-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="${BAIDU_API_KEY}"/>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>
+        <!--通知的点击事件-->
+        <receiver android:name="com.yc.liaolive.service.NotificationClickReceiver">
+            <intent-filter>
+                <action android:name="notification_clicked" />
+            </intent-filter>
+        </receiver>
+
+        <!--个推消息推送-->
+        <service
+            android:name="com.yc.liaolive.service.GeTuiMessageServer"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice"/>
+
+        <service android:name="com.yc.liaolive.service.GeTuiIntentServer" />
+
+        <!--版本升级,适配6.0及以上-->
+        <provider
+            android:name="com.yc.liaolive.model.ApkFileProvider"
+            android:authorities="${applicationId}.apkprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <!--元数据-->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <provider
+            android:name="com.yc.liaolive.model.DownloadFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+
+        <!--调用系统相机拍摄 适配6.0及以上-->
+        <provider
+            android:name="com.yc.liaolive.model.PickeFileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="name,authorities,exported,grantUriPermissions">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths"
+                tools:replace="name,resource" />
+        </provider>
+
+        <!-- 静态网络监听 -->
+        <receiver
+            android:name=".service.NetWorkChangeReivcer"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <!-- 友盟===统计、分享、登录 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="${UMENG_APPKEY}" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="" />
+        <!--微信-->
+        <activity
+            android:name="com.yc.liaolive.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <!--微信-->
+        <activity
+            android:name="com.android.ttvideo.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <!--微信-->
+        <activity
+            android:name="com.android.tnhuayan.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <!--QQ-->
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--这里的scheme是qq分享要用的，1106846629为自己申请的appid，真实项目中需要替换-->
+                <data android:scheme="tencent1108185960" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!--  消息收发 service -->
+        <service
+            android:name="com.tencent.qalsdk.service.QalService"
+            android:exported="false"
+            android:process=":QALSERVICE"/>
+        <!--  消息收发辅助 service -->
+        <service
+            android:name="com.tencent.qalsdk.service.QalAssistService"
+            android:exported="false"
+            android:process=":QALSERVICE"/>
+        <!--  离线消息广播接收器 -->
+        <receiver
+            android:name="com.tencent.qalsdk.QALBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.tencent.qalsdk.broadcast.qal" />
+            </intent-filter>
+        </receiver>
+        <!--  系统消息广播接收器 -->
+        <receiver
+            android:name="com.tencent.qalsdk.core.NetConnInfoCenter"
+            android:process=":QALSERVICE">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.activity.IntegralGetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.ui.BlacklistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.OpinionFeedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.ui.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.HelpDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.android.ttvideo.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.android.tnhuayan.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+
+        <!-- 支付宝支付中转页 -->
+        <activity
+            android:name=".pay.gui.AlipayInterimActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/TitleTranslucentTheme"/>
+
+        <activity
+            android:name=".pay.gui.WXPayInterimActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+        <!--Vip充值赠送话费弹窗-->
+        <activity
+            android:name=".recharge.ui.VipRewardDialogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/TitleTranslucentTheme"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask" />
+
+        <!-- 1v1 主播小视频播放 -->
+        <activity android:name=".media.ui.activity.VideoPlayerActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 权限申请页面 -->
+        <activity android:name=".permissions.CLPermissionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+
+        <!-- 在线用户咧-->
+        <activity android:name=".user.ui.OnlineUserActivity"
+                  android:screenOrientation="portrait"/>
+
+        <!--非Vip提示弹窗-->
+        <activity
+            android:name=".live.ui.activity.VipTipsDialogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/TitleTranslucentTheme"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask" />
+
+        <!-- 图片缓存 -->
+        <meta-data
+            android:name="com.yc.liaolive.model.GlideCache"
+            android:value="GlideModule" />
+
+        <!--game-->
+        <activity
+            android:name="com.yc.liaolive.util.game.view.GameWebActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--.NoActionBar-->
+        <service
+            android:name="com.yc.liaolive.util.game.view.DownLoadService"
+            android:exported="false" />
+        <receiver
+            android:name="com.yc.liaolive.util.game.view.DownLoadReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"
+                />
+        </provider>
+
+    </application>
+
+</manifest>

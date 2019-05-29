@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+    <!--发送时间-->
+    <TextView
+        android:id="@+id/systemMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/msg_chat_item_time_shape"
+        android:textColor="@color/common_aaa"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+        <!--左侧消息-->
+        <RelativeLayout
+            android:id="@+id/leftPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+            <RelativeLayout
+                android:id="@+id/item_left_user_icon_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.yc.liaolive.view.CircleImageView
+                    android:id="@+id/leftAvatar"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/item_left_user_icon_view"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/sender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="6dp"
+                    android:text="name"
+                    android:textColor="@color/text_gray1"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+                <RelativeLayout
+                    android:id="@+id/leftMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:longClickable="true" >
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rightPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <RelativeLayout
+                android:id="@+id/item_right_user_icon_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <com.yc.liaolive.view.CircleImageView
+                    android:id="@+id/rightAvatar"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rightMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="6dp"
+                android:layout_toLeftOf="@id/item_right_user_icon_view"
+                android:background="@drawable/ic_msg_item_right"
+                android:clickable="true"
+                android:gravity="center"
+                android:longClickable="true" />
+
+            <TextView
+                android:id="@+id/rightDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/rightMessage"
+                android:layout_below="@id/rightMessage"
+                android:layout_marginRight="3dp"
+                android:textColor="@color/text_gray1"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/sendStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/rightMessage">
+
+                <ProgressBar
+                    android:id="@+id/sending"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+
+                <ImageView
+                    android:id="@+id/sendError"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_error"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

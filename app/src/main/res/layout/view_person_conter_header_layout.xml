@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--可滑动头像父容器-->
+    <RelativeLayout
+        android:id="@+id/user_image_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </RelativeLayout>
+    <com.yc.liaolive.view.widget.AutoBannerLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="66dp"
+        app:bannerScaleType="centerCrop"
+        app:bannerIndicatorHeight="6dp"
+        app:bannerIndicatorWidth="6dp"
+        app:bannerIndicatorMargin="5dp"
+        app:bannerIndicatorSelected="@drawable/arice_white_dot"
+        app:bannerIndicatorUnselected="@drawable/arice_gray_9f_dot"
+        app:bannerRollDurtion="5000"
+        android:id="@+id/view_active_banner" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+                <!--在线状态-->
+
+                <com.yc.liaolive.index.view.AnchorStatusView
+                    android:id="@+id/user_offline_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+                <!--用户信息-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/view_tv_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/h10"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/view_iv_sex"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="3dp" />
+                    <ImageView
+                        android:id="@+id/view_iv_vip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp" />
+                    <ImageView
+                        android:id="@+id/view_iv_level"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="3dp" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/view_tv_signature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/h5" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!--预留指示器-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+</FrameLayout>

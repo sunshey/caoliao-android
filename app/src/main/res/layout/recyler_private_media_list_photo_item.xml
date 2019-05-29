@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/item_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/selectableItemBackground">
+    <!--封面-->
+    <ImageView
+        android:id="@+id/item_iv_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_default_item_cover"
+        android:scaleType="centerCrop" />
+    <!--审核中-->
+    <TextView
+        android:id="@+id/item_media_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_media_look"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/h6"
+        android:padding="4dp"
+        android:text="审核中..."
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"/>
+</RelativeLayout>

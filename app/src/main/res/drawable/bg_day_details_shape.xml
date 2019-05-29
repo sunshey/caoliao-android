@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+    <solid android:color="@color/transparent"></solid>
+    <stroke android:color="@color/gift_day_details_board" android:width="1.3dp"></stroke>
+    <corners android:radius="3dp"></corners>
+</shape>

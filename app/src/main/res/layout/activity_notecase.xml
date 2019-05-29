@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <com.yc.liaolive.view.widget.CommentTitleView
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:commentTitle="我的钱包" />
+        <com.yc.liaolive.view.layout.ReboundScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/ic_notecase_top_bg"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/view_icon_diamond"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/ic_notecase_top_diamond"/>
+                    <LinearLayout
+                        android:layout_toRightOf="@+id/view_icon_diamond"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/h4"
+                            android:textColor="@color/white"
+                            android:text="剩余钻石"/>
+                        <TextView
+                            android:id="@+id/tv_diamond"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/h30"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+                <com.yc.liaolive.view.widget.CommenItemLayout
+                    android:id="@+id/btn_recharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemIcon="@drawable/ic_notecase_recharge"
+                    app:itemTitle="充值"
+                    app:commentShowIcon="true"
+                    app:commentItemHeight="52dp" />
+                <com.yc.liaolive.view.widget.CommenItemLayout
+                    android:id="@+id/btn_diamond_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemIcon="@drawable/ic_notecase_details"
+                    app:commentShowIcon="true"
+                    app:itemTitle="钻石明细"
+                    app:commentItemHeight="52dp" />
+            </LinearLayout>
+        </com.yc.liaolive.view.layout.ReboundScrollView>
+    </LinearLayout>
+</layout>

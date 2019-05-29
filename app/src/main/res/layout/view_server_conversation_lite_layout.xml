@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/view_root_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:orientation="horizontal"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <ImageView
+            android:id="@+id/view_item_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="12dp" />
+        <TextView
+            android:id="@+id/view_item_title"
+            style="@style/SettingItemTitle"
+            android:layout_toRightOf="@+id/view_item_icon"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/view_more_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/h4"
+            android:textColor="@color/white"
+            android:layout_toLeftOf="@+id/view_more_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="5dp"/>
+        <ImageView
+            android:id="@+id/view_more_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_mine_head_more"/>
+    </RelativeLayout>
+</LinearLayout>

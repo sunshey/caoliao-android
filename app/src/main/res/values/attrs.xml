@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--加载中-->
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ProgressWheels">
+        <attr name="text" format="string" />
+        <attr name="textColors" format="color" />
+        <attr name="textSizes" format="dimension" />
+        <attr name="barColor" format="color" />
+        <attr name="rimColor" format="color" />
+        <attr name="rimWidth" format="dimension" />
+        <attr name="spinSpeed" format="dimension" />
+        <attr name="delayMillis" format="integer" />
+        <attr name="circleColor" format="color" />
+        <attr name="barWidth" format="dimension" />
+        <attr name="barLengths" format="dimension" />
+        <attr name="rimProgress" format="integer" />
+        <attr name="incrementMode" format="boolean" />
+    </declare-styleable>
+    <!--RecylerView-->
+    <declare-styleable name="superrecyclerview">
+        <attr name="layout_empty" format="reference" />
+        <attr name="layout_progress" format="reference" />
+        <attr name="layout_login" format="reference" />
+        <attr name="layout_error" format="reference" />
+        <attr name="recyclerClipToPadding" format="boolean" />
+        <attr name="recyclerPadding" format="dimension" />
+        <attr name="recyclerPaddingTop" format="dimension" />
+        <attr name="recyclerPaddingBottom" format="dimension" />
+        <attr name="recyclerPaddingLeft" format="dimension" />
+        <attr name="recyclerPaddingRight" format="dimension" />
+        <attr name="scrollbarStyle">
+            <enum name="insideOverlay" value="0x0" />
+            <enum name="insideInset" value="0x01000000" />
+            <enum name="outsideOverlay" value="0x02000000" />
+            <enum name="outsideInset" value="0x03000000" />
+        </attr>
+        <attr name="scrollbars">
+            <enum name="vertical" value="1" />
+            <enum name="horizontal" value="0" />
+            <enum name="none" value="2" />
+        </attr>
+    </declare-styleable>
+    <!--HorizontalListView-->
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+
+    <!--LoadingView-->
+    <declare-styleable name="LoadingView">
+        <attr name="loadding_color" format="color" />
+        <attr name="ring_style" format="enum">
+            <enum name="square" value="0" />
+            <enum name="round" value="1" />
+        </attr>
+        <attr name="progress_style" format="enum">
+            <enum name="material" value="0" />
+            <enum name="linear" value="1" />
+        </attr>
+
+        <attr name="ring_width" format="dimension" />
+        <attr name="ring_radius" format="dimension" />
+    </declare-styleable>
+
+
+    <!--波浪线-->
+    <declare-styleable name="WaveLineView">
+        <attr name="wave_first_color" format="color" />
+        <attr name="wave_second_color" format="color" />
+        <attr name="wave_line_width" format="dimension" />
+        <attr name="wave_phase" format="float" />
+        <attr name="wave_amplifier" format="float" />
+        <attr name="wave_frequency" format="float" />
+    </declare-styleable>
+    <!--进度条-->
+    <declare-styleable name="SaundProgressBar">
+        <attr name="progressIndicator" format="reference" />
+        <attr name="textSizeS" format="dimension" />
+        <attr name="textColor" format="reference|color" />
+        <attr name="textStyle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <attr name="textAlign">
+            <flag name="left" value="0" />
+            <flag name="center" value="1" />
+            <flag name="right" value="2" />
+        </attr>
+        <attr name="offset" format="dimension" />
+    </declare-styleable>
+
+    <attr name="absListViewStyle" format="reference" />
+    <attr name="listViewStyle" format="reference" />
+
+    <declare-styleable name="MultiColumnListView">
+        <attr name="plaColumnNumber" format="integer" />
+        <attr name="plaLandscapeColumnNumber" format="integer" />
+        <attr name="plaColumnPaddingLeft" format="dimension" />
+        <attr name="plaColumnPaddingRight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="PullToRefreshView">
+        <attr name="ptrHeight" format="dimension" />
+        <attr name="ptrSpinnerMarginRight" format="dimension" />
+        <attr name="ptrArrowMarginRight" format="dimension" />
+        <attr name="ptrTextSize" format="dimension" />
+        <attr name="ptrLastUpdateTextSize" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="AbsListView">
+
+        <!-- Drawable used to indicate the currently selected item in the list. -->
+        <attr name="listSelector" format="color|reference" />
+        <!--
+             When set to true, the selector will be drawn over the selected item.
+             Otherwise the selector is drawn behind the selected item. The default
+             value is false.
+        -->
+        <attr name="drawSelectorOnTop" format="boolean" />
+        <!-- Used by ListView and GridView to stack their content from the bottom. -->
+        <attr name="stackFromBottom" format="boolean" />
+        <!--
+             When set to true, the list uses a drawing cache during scrolling.
+             This makes the rendering faster but uses more memory. The default
+             value is true.
+        -->
+        <attr name="scrollingCache" format="boolean" />
+        <!--
+             When set to true, the list will filter results as the user types. The
+             List's adapter must support the Filterable interface for this to work.
+        -->
+        <attr name="textFilterEnabled" format="boolean" />
+        <!--
+             Sets the transcript mode for the list. In transcript mode, the list
+             scrolls to the bottom to make new items visible when they are added.
+        -->
+        <attr name="transcriptMode">
+
+            <!-- Disables transcript mode. This is the default value. -->
+            <enum name="disabled" value="0" />
+            <!--
+                 The list will automatically scroll to the bottom when
+                 a data set change notification is received and only if the last item is
+                 already visible on screen.
+            -->
+            <enum name="normal" value="1" />
+            <!--
+                 The list will automatically scroll to the bottom, no matter what items
+                 are currently visible.
+            -->
+            <enum name="alwaysScroll" value="2" />
+        </attr>
+        <!--
+             Indicates that this list will always be drawn on top of solid, single-color
+             opaque background. This allows the list to optimize drawing.
+        -->
+        <attr name="cacheColorHint" format="color" />
+        <!--
+             Enables the fast scroll thumb that can be dragged to quickly scroll through
+             the list.
+        -->
+        <attr name="fastScrollEnabled" format="boolean" />
+        <!--
+             When set to true, the list will use a more refined calculation
+             method based on the pixels height of the items visible on screen. This
+             property is set to true by default but should be set to false if your adapter
+             will display items of varying heights. When this property is set to true and
+             your adapter displays items of varying heights, the scrollbar thumb will
+             change size as the user scrolls through the list. When set to fale, the list
+             will use only the number of items in the adapter and the number of items visible
+             on screen to determine the scrollbar's properties.
+        -->
+        <attr name="smoothScrollbar" format="boolean" />
+        <!--
+             Defines the choice behavior for the view. By default, lists do not have
+             any choice behavior. By setting the choiceMode to singleChoice, the list
+             allows up to one item to be in a chosen state. By setting the choiceMode to
+             multipleChoice, the list allows any number of items to be chosen.
+             Finally, by setting the choiceMode to multipleChoiceModal the list allows
+             any number of items to be chosen in a special selection mode.
+             The application will supply a
+             {@link android.widget.AbsListView.MultiChoiceModeListener} using
+             {@link android.widget.AbsListView#setMultiChoiceModeListener} to control the
+             selection mode. This uses the {@link android.view.ActionMode} API.
+        -->
+        <attr name="choiceMode">
+
+            <!-- Normal list that does not indicate choices. -->
+            <enum name="none" value="0" />
+            <!-- The list allows up to one choice. -->
+            <enum name="singleChoice" value="1" />
+            <!-- The list allows multiple choices. -->
+            <enum name="multipleChoice" value="2" />
+            <!-- The list allows multiple choices in a custom selection mode. -->
+            <enum name="multipleChoiceModal" value="3" />
+        </attr>
+
+        <!--
+             When set to true, the list will always show the fast scroll interface.
+             This setting implies fastScrollEnabled.
+        -->
+        <attr name="fastScrollAlwaysVisible" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ListView">
+
+        <!-- Drawable or color to draw between list items. -->
+        <!-- <attr name="divider" format="reference|color" /> -->
+        <!--
+             Height of the divider. Will use the intrinsic height of the divider if this
+             is not specified.
+        -->
+        <attr name="dividerHeight" format="dimension" />
+        <!--
+             When set to false, the ListView will not draw the divider after each header view.
+             The default value is true.
+        -->
+        <attr name="headerDividersEnabled" format="boolean" />
+        <!--
+             When set to false, the ListView will not draw the divider before each footer view.
+             The default value is true.
+        -->
+        <attr name="footerDividersEnabled" format="boolean" />
+        <!-- Drawable to draw above list content. -->
+        <attr name="overScrollHeader" format="reference|color" />
+        <!-- Drawable to draw below list content. -->
+
+        <attr name="overScrollFooter" format="reference|color" />
+
+        <attr name="plaContentBackground" format="color" />
+    </declare-styleable>
+
+    <!--手势滑动关闭Actiivty-->
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension" />
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference" />
+        <attr name="shadow_right" format="reference" />
+        <attr name="shadow_bottom" format="reference" />
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference" />
+
+    <declare-styleable name="PasswordView">
+        <attr name="useStrikeThrough" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PriceLayoutView">
+        <attr name="heartColor" format="color" />
+    </declare-styleable>
+
+    <!--取景框-->
+    <declare-styleable name="ClipImageView">
+        <attr name="civHeight" format="integer" />
+        <attr name="civWidth" format="integer" />
+        <attr name="civTipText" format="string" />
+        <attr name="civTipTextSize" format="dimension" />
+        <attr name="civMaskColor" format="color" />
+        <attr name="civClipPadding" format="dimension" />
+        <attr name="civClipRoundCorner" format="dimension|reference" />
+        <attr name="civClipCircle" format="boolean" />
+    </declare-styleable>
+
+    <!--取景框-->
+    <declare-styleable name="Viewfinder">
+        <attr name="pwHeight" format="integer" />
+        <attr name="pwWidth" format="integer" />
+        <attr name="pwTipText" format="string" />
+        <attr name="pwTipTextSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RefreshView">
+        <attr name="type" format="enum">
+            <enum name="sun" value="0" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="ColorPickerView">
+        <attr name="indicatorColor" format="color" /><!--指示点颜色-->
+        <attr name="indicatorEnable" format="boolean" /><!--是否启用指示点-->
+        <attr name="orientation" format="integer">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="refresh_PullRefreshLayout">
+        <attr name="refreshType" format="enum">
+            <enum name="material" value="0" />
+            <enum name="circles" value="1" />
+            <enum name="water_drop" value="2" />
+            <enum name="ring" value="3" />
+            <enum name="smartisan" value="4" />
+        </attr>
+        <attr name="refreshColors" format="reference" />
+        <attr name="refreshColor" format="reference" />
+    </declare-styleable>
+
+
+    <!--点赞-->
+    <attr name="defaultColor" format="color"></attr>
+    <attr name="cirRadius" format="dimension"></attr>
+    <attr name="cycleTime" format="integer"></attr>
+
+    <declare-styleable name="LikeView">
+        <attr name="defaultColor" />
+        <attr name="cirRadius" />
+        <attr name="cycleTime" />
+    </declare-styleable>
+
+    <declare-styleable name="ObservableScrollView">
+        <attr name="zoomId" format="reference|integer" />
+        <attr name="maxZoom" format="dimension" />
+    </declare-styleable>
+
+
+    <!--自定义波形动画相关属性-->
+    <declare-styleable name="XinQuLoadingView">
+        <!--图片-->
+        <attr name="logoImage" format="reference" />
+        <!--波形频率-->
+        <attr name="frequency" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="MultiDirectionSlidingDrawer">
+        <attr name="handle" format="dimension"></attr>
+        <attr name="content" format="dimension"></attr>
+        <attr name="allowSingleTap" format="boolean"></attr>
+        <attr name="animateOnClick" format="boolean"></attr>
+        <attr name="bottomOffset" format="dimension"></attr>
+        <attr name="topOffset" format="dimension"></attr>
+        <attr name="direction">
+            <enum name="rightToLeft" value="0" />
+            <enum name="bottomToTop" value="1" />
+            <enum name="leftToRight" value="2" />
+            <enum name="topToBottom" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ScrollLayout">
+        <attr name="minOffset" format="dimension" />
+        <attr name="maxOffset" format="dimension" />
+        <attr name="exitOffset" format="dimension" />
+        <attr name="mode">
+            <flag name="open" value="0x0" />
+            <flag name="close" value="0x1" />
+            <flag name="exit" value="0x2" />
+        </attr>
+        <attr name="allowHorizontalScroll" format="boolean" />
+        <attr name="isSupportExit" format="boolean" />
+    </declare-styleable>
+
+    <!--通用输入框-->
+    <declare-styleable name="EditInputView">
+        <attr name="inputInputIcon" format="reference"></attr>
+        <attr name="inputCleanIcon" format="reference"></attr>
+        <attr name="inputHintText" format="string"></attr>
+        <attr name="inputHintTextColor" format="color"></attr>
+        <attr name="inputTextColor" format="color"></attr>
+        <attr name="inputInputType" format="integer"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="RealtimeBlurView">
+        <attr name="realtimeBlurRadius" format="dimension" />
+        <attr name="realtimeDownsampleFactor" format="float" />
+        <attr name="realtimeOverlayColor" format="color" />
+    </declare-styleable>
+
+    <!--LoadingSubmit组件-->
+    <declare-styleable name="LoadingButton">
+        <attr name="loadBackground" format="reference" />
+        <attr name="loadBackgroundBlock" format="reference" />
+        <attr name="loadButtonTextColor" format="color" />
+        <attr name="loadTextSize" format="dimension" />
+        <attr name="loadIconSrc" format="reference" />
+        <attr name="loadButtonText" format="string" />
+        <attr name="loadButtonBolckText" format="string" />
+    </declare-styleable>
+
+    <!--直播-->
+
+    <!--桃心-->
+    <declare-styleable name="FlutteringLayout">
+        <attr name="enter_duration" format="integer" />
+        <attr name="duration" format="integer" />
+        <attr name="scale" format="float" />
+        <attr name="same_size" format="boolean" />
+    </declare-styleable>
+
+    <!-- 圆形头像 -->
+    <declare-styleable name="CustomRoundView">
+        <attr name="border_width" format="dimension"></attr>
+        <attr name="border_color" format="color"></attr>
+    </declare-styleable>
+    <!--特效文字-->
+    <declare-styleable name="MagicTextView">
+        <attr name="innerShadowColor" format="color" />
+        <attr name="innerShadowRadius" format="float" />
+        <attr name="innerShadowDx" format="float" />
+        <attr name="innerShadowDy" format="float" />
+        <attr name="outerShadowColor" format="color" />
+        <attr name="outerShadowRadius" format="float" />
+        <attr name="outerShadowDx" format="float" />
+        <attr name="outerShadowDy" format="float" />
+        <attr name="typeface" format="string" />
+        <attr name="foreground" format="reference|color" />
+        <attr name="strokeWidth" format="float" />
+        <attr name="strokeMiter" format="float" />
+        <attr name="strokeColor" format="color" />
+        <attr name="strokeJoinStyle">
+            <enum name="miter" value="0" />
+            <enum name="bevel" value="1" />
+            <enum name="round" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <!-- 飘星自定义属性 -->
+    <declare-styleable name="HeartLayout">
+        <attr name="initX" format="dimension" />
+        <attr name="initY" format="dimension" />
+        <attr name="xRand" format="dimension" />
+        <attr name="animLengthRand" format="dimension" />
+        <attr name="xPointFactor" format="dimension" />
+        <attr name="animLength" format="dimension" />
+        <attr name="heart_width" format="dimension" />
+        <attr name="heart_height" format="dimension" />
+        <attr name="bezierFactor" format="integer" />
+        <attr name="anim_duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="bgColor" format="color" />
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColorP" format="color" />
+        <attr name="textSizeR" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+    <!--list的底部view-->
+    <declare-styleable name="MsgFooterView">
+        <attr name="msgFooterContent" format="string" />
+        <attr name="msgFooterContentColor" format="color" />
+    </declare-styleable>
+    <!--首页小直播窗口-->
+    <declare-styleable name="IndexLivePlayView">
+        <attr name="indexLiveLoadingSrc" format="reference"></attr>
+        <attr name="indexLiveCloseSrc" format="reference"></attr>
+        <attr name="indexLiveShowBack" format="boolean"></attr>
+        <attr name="indexLiveShowTitle" format="boolean"></attr>
+    </declare-styleable>
+    <!--首页小直播窗口父类-->
+    <declare-styleable name="IndexLivePlayerViewGroup">
+        <attr name="indexLivePlayerCount" format="integer" />
+    </declare-styleable>
+    <!--流式布局-->
+    <declare-styleable name="FlowLayout">
+        <attr name="flowTextSize" format="dimension"></attr>
+        <attr name="flowTextColor" format="color"></attr>
+    </declare-styleable>
+    <!-- 标题模板自定义属性 -->
+    <declare-styleable name="TemplateTitle">
+        <!-- 标题文案 -->
+        <attr name="titleText" format="string" />
+        <!-- 是否有back按钮 -->
+        <attr name="canBack" format="boolean" />
+        <!-- back按钮文案 -->
+        <attr name="backText" format="string" />
+        <!-- 右侧更多功能按钮图片 -->
+        <attr name="moreImg" format="reference" />
+        <!-- 右侧更多功能按钮文字 -->
+        <attr name="moreText" format="string" />
+        <!--标题栏风格，状态栏 0：白底黑字 2：彩底白字-->
+        <attr name="tempTitleStyle" format="integer" />
+    </declare-styleable>
+
+
+    <!-- 条形控制控件自定义属性 -->
+    <declare-styleable name="LineControllerView">
+        <!-- 名称 -->
+        <attr name="linName" format="string" />
+        <!-- 内容或当前状态 -->
+        <attr name="linContent" format="string" />
+        <!-- 是否是列表中最后一个 -->
+        <attr name="linIsBottom" format="boolean" />
+        <!-- 是否可以跳转 -->
+        <attr name="linCanNav" format="boolean" />
+        <!-- 是否是开关 -->
+        <attr name="linIsSwitch" format="boolean" />
+    </declare-styleable>
+    <!--倒计时控件-->
+    <declare-styleable name="CountdownBotton">
+        <!--获得焦点文字-->
+        <attr name="countdownTextGetFocus" format="string" />
+        <!--获得焦点文字颜色-->
+        <attr name="countdownTextColorGetFocus" format="color" />
+        <!--失去焦点文字颜色-->
+        <attr name="countdownTextColorOutFocus" format="color" />
+        <!--获得焦点背景资源-->
+        <attr name="countdownBackgroundGetFocus" format="reference" />
+        <!--失去焦点背景资源-->
+        <attr name="countdownBackgroundOutFocus" format="reference" />
+        <!--文字大小-->
+        <attr name="countdownTextSize" format="integer" />
+    </declare-styleable>
+    <!--通用标题-->
+    <declare-styleable name="CommentTitleView">
+        <!--标题文字-->
+        <attr name="commentTitle" format="string" />
+        <!--标题文字颜色-->
+        <attr name="commentTitleColor" format="color" />
+        <!--标题文字大小-->
+        <attr name="commentTitleSize" format="dimension"></attr>
+        <!--副标题文字-->
+        <attr name="commentSubTitle" format="string"></attr>
+        <!--副标题文字颜色-->
+        <attr name="commentSubTitleColor" format="color" />
+        <!--副标题文字大小-->
+        <attr name="commentSubTitleSize" format="dimension"></attr>
+        <!--是否显示副标题-->
+        <attr name="commentShowSubTitle" format="boolean"></attr>
+        <!--更多标题文字-->
+        <attr name="commentMoreTitle" format="string" />
+        <!--更多标题颜色-->
+        <attr name="commentMoreTitleColor" format="color" />
+        <!--更多标题文字大小-->
+        <attr name="commentMoreTitleSize" format="dimension"></attr>
+        <!--是否显示右侧更多-->
+        <attr name="commentShowMoreTitle" format="boolean" />
+        <!--返回按钮是否可用-->
+        <attr name="commentShowBack" format="boolean" />
+        <!--返回按钮RES-->
+        <attr name="commentBackRes" format="reference" />
+        <!--是否显示Image菜单1-->
+        <attr name="commentShowMenu1" format="boolean"></attr>
+        <!--是否显示Image菜单2-->
+        <attr name="commentShowMenu2" format="boolean"></attr>
+        <!--菜单1的资源图片-->
+        <attr name="commentMenuSrc1" format="reference"></attr>
+        <!--菜单2的资源图片-->
+        <attr name="commentMenuSrc2" format="reference"></attr>
+        <!--状态栏高度-->
+        <attr name="commentStatusBarHeight" format="dimension"></attr>
+        <!--标题栏风格，状态栏 0：白底黑字 1：彩底白字-->
+        <attr name="commentTitleStyle" format="integer" />
+    </declare-styleable>
+
+    <!--switchButton-->
+    <declare-styleable name="SwitchButton" tools:ignore="ResourceName">
+        <attr name="kswThumbDrawable" format="reference" />
+        <attr name="kswThumbColor" format="color|reference" />
+        <attr name="kswThumbMargin" format="dimension|reference" />
+        <attr name="kswThumbMarginTop" format="dimension|reference" />
+        <attr name="kswThumbMarginBottom" format="dimension|reference" />
+        <attr name="kswThumbMarginLeft" format="dimension|reference" />
+        <attr name="kswThumbMarginRight" format="dimension|reference" />
+        <attr name="kswThumbWidth" format="dimension|reference" />
+        <attr name="kswThumbHeight" format="dimension|reference" />
+        <attr name="kswThumbRadius" format="dimension|reference" />
+        <attr name="kswBackRadius" format="dimension|reference" />
+        <attr name="kswBackDrawable" format="reference" />
+        <attr name="kswBackColor" format="color|reference" />
+        <attr name="kswFadeBack" format="boolean" />
+        <attr name="kswThumbRangeRatio" format="float" />
+        <attr name="kswAnimationDuration" format="integer" />
+        <attr name="kswTintColor" format="color|reference" />
+        <attr name="kswTextOn" format="string" />
+        <attr name="kswTextOff" format="string" />
+        <attr name="kswTextThumbInset" format="dimension" />
+        <attr name="kswTextExtra" format="dimension" />
+        <attr name="kswTextAdjust" format="dimension" />
+    </declare-styleable>
+    <!--礼物选择面板-->
+    <declare-styleable name="GiftBoardView">
+        <!--场景模式-->
+        <attr name="giftMode" format="integer"></attr>
+    </declare-styleable>
+    <!--斜角背景的TextView-->
+    <declare-styleable name="SlantedTextView">
+        <attr name="slantedTextSize" format="dimension" />
+        <attr name="slantedBackgroundColor" format="color" />
+        <attr name="slantedText" format="string" />
+        <attr name="slantedTextColor" format="color" />
+        <attr name="slantedLength" format="dimension" />
+        <attr name="slantedMode" format="enum">
+            <enum name="left" value="0"></enum>
+            <enum name="right" value="1"></enum>
+            <enum name="left_bottom" value="2"></enum>
+            <enum name="right_bottom" value="3"></enum>
+            <enum name="left_triangle" value="4"></enum>
+            <enum name="right_triangle" value="5"></enum>
+            <enum name="left_bottom_triangle" value="6"></enum>
+            <enum name="right_bottom_triangle" value="7"></enum>
+        </attr>
+    </declare-styleable>
+    <!--视频直播-->
+    <declare-styleable name="VideoLiveControllerView">
+
+    </declare-styleable>
+
+    <declare-styleable name="MyDetailItemView">
+        <attr name="item_icon" format="reference" />
+        <attr name="item_title" format="string" />
+        <attr name="item_is_solid" format="boolean" />
+        <attr name="item_solid_text" format="string" />
+        <attr name="item_stroke_text" format="string" />
+
+    </declare-styleable>
+
+    <declare-styleable name="LevelProgressView">
+        <attr name="backGroundColor" format="color" />
+        <attr name="progressbarColor" format="color" />
+        <attr name="drawable" format="reference" />
+        <attr name="halfDrawableWidth" format="dimension" />
+        <attr name="halfDrawableHeight" format="dimension" />
+        <attr name="drawableHeightOffset" format="dimension" />
+        <attr name="isRound" format="boolean" />
+        <attr name="roundX" format="dimension" />
+        <attr name="roundY" format="dimension" />
+        <attr name="progress" format="integer" />
+        <attr name="progressMax" format="integer" />
+        <attr name="isSetBar" format="boolean" />
+        <attr name="progressHeight" format="dimension" />
+        <attr name="progressHeightOffset" format="dimension" />
+        <attr name="refreshTime" format="integer" />
+        <attr name="animMode" format="enum">
+            <enum name="ANIM_NULL" value="0" />
+            <enum name="ANIM_ROTATE" value="1" />
+            <enum name="ANIM_SCALE" value="2" />
+            <enum name="ANIM_ROTATE_SCALE" value="3" />
+            <enum name="ANIM_FRAME" value="4" />
+        </attr>
+        <attr name="rotateRate" format="integer" />
+        <attr name="rotateDegree" format="integer" />
+        <attr name="scaleMax" format="float" />
+        <attr name="scaleMin" format="float" />
+        <attr name="scaleRate" format="float" />
+        <attr name="isGradient" format="boolean" />
+        <attr name="gradientStartColor" format="color" />
+        <attr name="gradientEndColor" format="color" />
+        <attr name="backgroundDrawable" format="reference" />
+        <attr name="barDrawable" format="reference" />
+        <attr name="outer_color" format="color" />
+
+
+    </declare-styleable>
+
+    <declare-styleable name="XGallery">
+
+        <!-- Item的宽度 -->
+        <attr name="itemWidth" format="dimension" />
+
+        <!-- Item的高度 -->
+        <attr name="itemHeight" format="dimension" />
+
+    </declare-styleable>
+    <declare-styleable name="TaskProgressBar">
+        <attr name="taskProgressMaxProgress" format="integer"></attr>
+        <attr name="taskProgressProgress" format="integer"></attr>
+        <attr name="taskProgressDurtion" format="integer"></attr>
+        <attr name="taskProgressTextColor" format="color"></attr>
+    </declare-styleable>
+    <!--首页菜单-->
+    <declare-styleable name="IndexTabView">
+        <!--文字-->
+        <attr name="indexTabText" format="string" />
+        <!--icon-->
+        <attr name="indexTabIcon" format="reference" />
+        <!--文字颜色-->
+        <attr name="indexTabTextColor" format="color" />
+        <!--文字大小-->
+        <attr name="indexTabSize" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="MainTabView">
+        <!--文字-->
+        <attr name="mainTabText" format="string" />
+        <!--icon-->
+        <attr name="mainTabIcon" format="reference" />
+        <!--文字颜色-->
+        <attr name="mainTabTextColor" format="color" />
+        <!--文字大小-->
+        <attr name="mainTabSize" format="integer" />
+        <!--是否选中-->
+        <attr name="mainTabSelected" format="boolean" />
+    </declare-styleable>
+
+
+    <!--扩散圆颜色-->
+    <attr name="diffuse_color" format="color"/>
+    <!--中心圆颜色-->
+    <attr name="diffuse_coreColor" format="color"/>
+    <!--中心圆图片-->
+    <attr name="diffuse_coreImage" format="reference"/>
+    <!--中心圆半径-->
+    <attr name="diffuse_coreRadius" format="float"/>
+    <!--扩散圆宽度,值越小越宽-->
+    <attr name="diffuse_width" format="integer"/>
+    <!--最大扩散宽度-->
+    <attr name="diffuse_maxWidth" format="integer"/>
+    <!--扩散速度，值越大越快-->
+    <attr name="diffuse_speed" format="integer"/>
+
+    <declare-styleable name="DiffuseView">
+        <attr name="diffuse_color"/>
+        <attr name="diffuse_coreColor"/>
+        <attr name="diffuse_coreImage"/>
+        <attr name="diffuse_coreRadius"/>
+        <attr name="diffuse_width"/>
+        <attr name="diffuse_maxWidth"/>
+        <attr name="diffuse_speed"/>
+    </declare-styleable>
+    <!--刷新按钮-->
+    <declare-styleable name="SwipeRefreshProgress">
+        <attr name="swipeload_loadIcon" format="reference" />
+    </declare-styleable>
+    <!--进度条-->
+    <declare-styleable name="CircleTextProgressbar">
+        <attr name="in_circle_color" format="color" />
+    </declare-styleable>
+    <!--侧滑删除-->
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="swipeEnable" format="boolean"/>
+        <attr name="ios" format="boolean"/>
+        <attr name="leftSwipe" format="boolean"/>
+    </declare-styleable>
+    <!--镂空圆形-->
+    <declare-styleable name="FrameLayoutWithHole">
+        <attr name="hole_radius" format="integer"/>
+        <attr name="background_color" format="color"/>
+        <attr name="radius_x" format="integer"/>
+        <attr name="radius_y" format="integer"/>
+    </declare-styleable>
+    <!--通用边角Layout-->
+    <declare-styleable name="CornerItemLayout">
+        <!--X轴 边角半径-->
+        <attr name="itemLayoutCornerRadiusX" format="integer"/>
+        <!--Y轴 边角半径-->
+        <attr name="itemLayoutCornerRadiusY" format="integer"/>
+        <!--圆角半径，优先半径-->
+        <attr name="itemLayoutCornerRadius" format="integer"/>
+    </declare-styleable>
+
+    <!--自定义波纹雷达-->
+    <declare-styleable name="CircleRadarLayout">
+        <!--颜色-->
+        <attr name="radarColor" format="color"/>
+        <!--单圈播放时长-->
+        <attr name="radarPlayDurtion" format="integer"/>
+        <!--间隔绘制圆圈事件-->
+        <attr name="radarIntervalDurtion" format="integer"/>
+        <!--圆环宽度-->
+        <attr name="radarStrokeWidth" format="integer"/>
+        <!--最小透明度-->
+        <attr name="radarMinAlpha" format="float"/>
+        <!--是否是圆环-->
+        <attr name="radarIsRing" format="boolean"/>
+        <!--是否自定启动-->
+        <attr name="radarIsAutoRun" format="boolean"/>
+        <!--中间的元素资源图片-->
+        <attr name="radarIconSrc" format="reference"/>
+        <!--是否是自定义布局-->
+        <attr name="radarCustomLayout" format="boolean"/>
+        <!--ICON宽-->
+        <attr name="radarIconWidth" format="integer"/>
+        <!--ICON高-->
+        <attr name="radarIconHeight" format="integer"/>
+        <!--ICON居中样式-->
+        <attr name="radarIconGravity" format="string"/>
+        <!--ICON边距-->
+        <attr name="radarIconPadding" format="integer"/>
+    </declare-styleable>
+    <!--自定义圆角ImageView-->
+    <declare-styleable name="RoundImageView">
+        <attr name="roundShape" format="enum">
+            <enum name="rect" value="1"/>
+            <enum name="circle" value="2"/>
+            <enum name="oval" value="3"/>
+        </attr>
+        <attr name="roundRadius" format="dimension"/>
+        <attr name="roundBorderSize" format="dimension"/>
+        <attr name="roundBorderColor" format="color"/>
+        <attr name="roundScaleType" format="enum">
+            <enum name="centerInside" value="1"/>
+            <enum name="centerCrop" value="2"/>
+            <enum name="fitXY" value="3"/>
+        </attr>
+    </declare-styleable>
+    <!--视频播放器TAB-->
+    <declare-styleable name="VideoPlayerTabLayout">
+        <attr name="playerTabIcon" format="reference"/>
+        <attr name="playerTabText" format="string"/>
+        <attr name="playerTabTextColor" format="color"/>
+        <attr name="playerTabTextSize" format="dimension"/>
+    </declare-styleable>
+    <!--加载中动画-->
+    <declare-styleable name="LoadingIndicatorView">
+        <attr format="dimension" name="loadingMinWidth"/>
+        <attr format="dimension" name="loadingMaxWidth"/>
+        <attr format="dimension" name="loadingMinHeight"/>
+        <attr format="dimension" name="loadingMaxHeight"/>
+        <attr format="color" name="loadingIndicatorLoadColor"/>
+    </declare-styleable>
+    <!--图片裁剪-->
+    <declare-styleable name="CropImageView">
+        <attr name="guidelines">
+            <enum name="off" value="0"/>
+            <enum name="onTouch" value="1"/>
+            <enum name="on" value="2"/>
+        </attr>
+        <attr name="fixAspectRatio" format="boolean"/>
+        <attr name="aspectRatioX" format="integer"/>
+        <attr name="aspectRatioY" format="integer"/>
+    </declare-styleable>
+    <!--通用ITEM-->
+    <declare-styleable name="CommenItemLayout">
+        <!--标题文字-->
+        <attr name="itemTitle" format="string"></attr>
+        <!--标题颜色-->
+        <attr name="itemTitleColor" format="color"></attr>
+        <!--标题大小-->
+        <attr name="itemTitleSize" format="dimension"></attr>
+        <!--ICON-->
+        <attr name="itemIcon" format="reference"></attr>
+        <!--是否显示ICON-->
+        <attr name="commentShowIcon" format="boolean"></attr>
+        <!--ICON COLOR-->
+        <attr name="itemIconColor" format="color"></attr>
+        <!--更多标题-->
+        <attr name="itemMoreTitle" format="string"></attr>
+        <!--更多标题颜色-->
+        <attr name="itemMoreTitleColor" format="color"></attr>
+        <!--更多标题大小-->
+        <attr name="itemMoreTitleSize" format="dimension"></attr>
+        <!--更多图标-->
+        <attr name="itemMoreTitleIcon" format="reference"></attr>
+        <!--是否显示下划线-->
+        <attr name="itemShowLine" format="boolean"></attr>
+        <!--是否显示更多-->
+        <attr name="itemShowMoreIcon" format="boolean"></attr>
+        <!--ITE高度-->
+        <attr name="commentItemHeight" format="dimension"></attr>
+    </declare-styleable>
+    <!--选择器-->
+    <declare-styleable name="WheelView">
+        <!-- 中间分割线外的item数量,整个滑动数量就为 wheelItemCount * 2 + 1  -->
+        <attr name="wheelItemCount" format="integer"/>
+        <!-- 滑轮item高度 -->
+        <attr name="wheelItemSize" format="dimension"/>
+        <!-- 滑轮字体大小 -->
+        <attr name="wheelTextSize" format="dimension"/>
+        <!-- 滑轮字体颜色 -->
+        <attr name="wheelTextColor" format="color"/>
+        <!-- 滑轮中心字体颜色 -->
+        <attr name="wheelTextColorCenter" format="color"/>
+        <!-- 分割线颜色 -->
+        <attr name="dividerColor" format="color"/>
+        <!-- 布局方向 -->
+        <attr name="wheelOrientation">
+            <enum name="vertical" value="1"/>
+            <enum name="horizontal" value="2"/>
+        </attr>
+        <!-- 水平布局时不考虑只参数,  当垂直布局时的左右靠齐立体效果 -->
+        <attr name="wheelGravity">
+            <enum name="left" value="1"/>
+            <enum name="center" value="2"/>
+            <enum name="right" value="3"/>
+        </attr>
+
+        <attr name="gravityCoefficient" format="float"/>
+
+        <!-- 两根分割线的距离 -->
+        <attr name="wheelDividerSize" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="AuthenticationImageLayout">
+        <attr name="authTitle" format="string"></attr>
+        <!--默认封面-->
+        <attr name="authDefaultIcon" format="reference"></attr>
+    </declare-styleable>
+
+    <!--用户中心资产-->
+    <declare-styleable name="MineHeadAssets">
+        <!--标题文字-->
+        <attr name="assetsItemTitle" format="string"></attr>
+        <attr name="assetsItemTitleColor" format="color"></attr>
+        <attr name="assetsItemTitleSize" format="integer"></attr>
+        <!--ICON-->
+        <attr name="assetsItemIcon" format="reference"></attr>
+        <!--更多标题-->
+        <attr name="assetsItemSubTitle" format="string"></attr>
+        <attr name="assetsItemSubTitleColor" format="color"></attr>
+        <attr name="assetsItemSubTitleSize" format="integer"></attr>
+    </declare-styleable>
+
+    <!--轮播图-->
+    <declare-styleable name="AutoBannerLayout">
+        <!--指示器高度-->
+        <attr name="bannerIndicatorHeight" format="dimension"></attr>
+        <!--指示器宽度-->
+        <attr name="bannerIndicatorWidth" format="dimension"></attr>
+        <!--指示器边距-->
+        <attr name="bannerIndicatorMargin" format="dimension"></attr>
+        <!--指示器选中样式-->
+        <attr name="bannerIndicatorSelected" format="reference"></attr>
+        <!--指示器未选中样式-->
+        <attr name="bannerIndicatorUnselected" format="reference"></attr>
+        <!--间隔播放时长-->
+        <attr name="bannerRollDurtion" format="integer"></attr>
+        <!--指示器是否显示-->
+        <attr name="bannerShowIndicator" format="boolean"></attr>
+        <!--是否自动轮播-->
+        <attr name="bannerAutoRoll" format="boolean"></attr>
+        <!--图片缩放类型-->
+        <attr name="bannerScaleType" format="enum">
+            <enum name="center" value="0" />
+            <enum name="centerCrop" value="1" />
+            <enum name="centerInside" value="2" />
+            <enum name="fitCenter" value="3" />
+            <enum name="fitEnd" value="4" />
+            <enum name="fitStart" value="5" />
+            <enum name="fitXy" value="6" />
+            <enum name="matrix" value="7" />
+        </attr>
+    </declare-styleable>
+    <!--圆形-->
+    <declare-styleable name="CircleSuperscriptLayout">
+        <!--圆心颜色-->
+        <attr name="circleSuperColor" format="color"></attr>
+        <attr name="circleSuperRadius" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="RollingTextView">
+        <attr name="rollTextDuration" format="integer" />
+        <!-- Custom implementations of common android text attributes -->
+        <attr name="android:gravity" tools:ignore="ResourceName" />
+        <attr name="android:shadowColor" tools:ignore="ResourceName" />
+        <attr name="android:shadowDx" tools:ignore="ResourceName" />
+        <attr name="android:shadowDy" tools:ignore="ResourceName" />
+        <attr name="android:shadowRadius" tools:ignore="ResourceName" />
+        <attr name="android:text" tools:ignore="ResourceName" />
+        <attr name="android:textAppearance" tools:ignore="ResourceName" />
+        <attr name="android:textColor" tools:ignore="ResourceName" />
+        <attr name="android:textSize" tools:ignore="ResourceName" />
+        <attr name="android:textStyle" tools:ignore="ResourceName" />
+    </declare-styleable>
+
+    <declare-styleable name="RoomGiftGroupManager">
+        <attr name="giftItemApiType" format="integer"/>
+    </declare-styleable>
+
+    <!--设置ITEM-->
+    <declare-styleable name="SettingItemLayout">
+        <!--标题文字-->
+        <attr name="itemSettingTitle" format="string"></attr>
+        <!--标题颜色-->
+        <attr name="itemSettingTitleColor" format="color"></attr>
+        <!--标题大小-->
+        <attr name="itemSettingTitleSize" format="integer"></attr>
+        <!--item高度-->
+        <attr name="itemSettingItemHeight" format="dimension"></attr>
+        <!--是否显示下划线-->
+        <attr name="itemSettingShowLine" format="boolean"></attr>
+        <!--是否显示更多-->
+        <attr name="itemSettingItemTextOff" format="string"></attr>
+        <!--按钮打开文字-->
+        <attr name="itemSettingItemTextOn" format="string"></attr>
+    </declare-styleable>
+    <!--视频播放器-->
+    <declare-styleable name="LiveVideoPlayerManager">
+        <!--是否显示默认的背景封面-->
+        <attr name="videoPlayerDefaultBackground" format="boolean"></attr>
+    </declare-styleable>
+</resources>

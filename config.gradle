@@ -1,0 +1,22 @@
+ext {
+    android = [
+            compileSdkVersion: 26,
+            buildToolsVersion: "26.0.2",
+            minSdkVersion    : 19,
+            targetSdkVersion : 26,
+            devMinSdk        : 19,
+
+    ]
+
+    caoliao = [
+            applicationId: "com.android.tnhuayan",
+            versionCode  : 34000,
+            versionName  : "1.4.00",
+    ]
+
+    ttvideo = [
+            applicationId: "com.android.ttvideo",
+            versionCode  : 10000,
+            versionName  : "1.0.0",
+    ]
+}

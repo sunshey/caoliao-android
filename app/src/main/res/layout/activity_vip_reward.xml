@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_activity_reawrd">
+        <!--顶部样式-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_vip_reward_top"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="8dp"
+            android:overScrollMode="never"
+            android:id="@+id/recycler_view" />
+        <TextView
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_vip_submit_shape"
+            android:textColor="@color/white"
+            android:paddingLeft="64dp"
+            android:paddingRight="64dp"
+            android:paddingTop="9dp"
+            android:paddingBottom="9dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:text="确定"/>
+    </LinearLayout>
+</layout>

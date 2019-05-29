@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_index_menu_bg"
+        android:id="@+id/root_view"
+        android:orientation="vertical">
+        <!--<TextView-->
+            <!--android:id="@+id/btn_post_video"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="15dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="上传ASMR视频"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:textSize="16dp"-->
+            <!--android:background="?attr/selectableItemBackgroundBorderless"/>-->
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0.5dp"-->
+            <!--android:background="#1AFFFFFF" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/btn_post_audio"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="15dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:text="上传ASMR音频"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:textSize="16dp"-->
+            <!--android:background="?attr/selectableItemBackgroundBorderless"/>-->
+    </LinearLayout>
+</layout>

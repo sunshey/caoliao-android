@@ -1,0 +1,1 @@
+include ':app', ':citypicker', ':banner', ':securityhttp', ':faceunity', ':music-player', ':music-player-lib', ':video-player-lib'

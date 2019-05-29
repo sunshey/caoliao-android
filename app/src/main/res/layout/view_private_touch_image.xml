@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--显示原图的控件-->
+    <com.yc.liaolive.media.view.PinchImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:id="@+id/view_image">
+    </com.yc.liaolive.media.view.PinchImageView>
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_tips_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:gravity="center"-->
+        <!--android:visibility="gone"-->
+        <!--android:background="@color/translucent_40">-->
+        <!--<ImageView-->
+            <!--android:id="@+id/ic_tips"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/ic_private_media_preview_touch"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_tips"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/h6"-->
+            <!--android:textStyle="bold"-->
+            <!--android:text="@string/media_preview_tips"-->
+            <!--android:layout_marginTop="22dp"/>-->
+    <!--</LinearLayout>-->
+</RelativeLayout>

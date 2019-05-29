@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#E3E3E3"/>
+    <com.yc.liaolive.msg.view.ServerConversationLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/server_conversation">
+    </com.yc.liaolive.msg.view.ServerConversationLayout>
+</LinearLayout>

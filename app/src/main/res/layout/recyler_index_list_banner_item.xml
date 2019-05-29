@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp">
+        <com.youth.banner.Banner
+            android:id="@+id/item_index_banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:image_scale_type="fit_xy"
+            app:indicator_drawable_selected="@drawable/arice_white_dot"
+            app:indicator_drawable_unselected="@drawable/arice_white_nomil_dot"
+            app:indicator_height="6dp"
+            app:indicator_width="6dp"
+            app:indicator_margin="4dp"/>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

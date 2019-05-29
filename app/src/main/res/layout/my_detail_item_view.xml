@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/item_space_10"
+    android:paddingRight="@dimen/item_space_10">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/item_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_index_tab_follow_pre" />
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_space_10"
+            android:layout_gravity="center_vertical"
+            android:text="积分提现"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:id="@+id/ll_solid_container"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_login_app_style_cicle"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_solid_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/get_deposit"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="50%"
+            android:textColor="@color/app_style" />
+
+        <LinearLayout
+            android:id="@+id/ll_stroke_container"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/get_deposit_stroke_bg"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/item_stroke_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/get_deposit"
+                android:textColor="@color/app_style" />
+        </LinearLayout>
+
+    </FrameLayout>
+</RelativeLayout>

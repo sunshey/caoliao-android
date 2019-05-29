@@ -1,0 +1,6 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">同城蜜约</string>
+    <!--login_type : 登录背景视频 登录背景图片-->
+    <string name="login_type">login_video</string>
+    <string name="download_apk_url">http://z.197754.com/app.apk</string>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/tool_bar_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <com.yc.liaolive.msg.view.TemplateTitle
+            android:id="@+id/GroupMemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:canBack="true"
+            app:titleText="@string/group_member_profile" />
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <com.yc.liaolive.view.CircleImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_default_user_head"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginLeft="20dp">
+            <TextView
+                android:id="@id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="20dp"
+        android:background="@color/line" />
+
+    <com.yc.liaolive.msg.view.LineControllerView
+        android:id="@+id/manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:linName="@string/group_member_manage"
+        app:linIsSwitch="true" />
+    <com.yc.liaolive.msg.view.LineControllerView
+        android:id="@+id/setQuiet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:linName="@string/group_member_quiet"
+        app:linCanNav="true"/>
+    <com.yc.liaolive.msg.view.LineControllerView
+        android:id="@+id/groupCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:linIsBottom="true"
+        app:linName="@string/group_member_card" />
+
+    <TextView
+        android:id="@+id/kick"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:background="@drawable/bg_negative_btn"
+        android:textColor="@color/text_btn"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/group_member_del"/>
+
+</LinearLayout>

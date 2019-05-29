@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--远端画面预览-->
+        <com.yc.liaolive.videocall.view.VideoCallPerviewWindown
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/view_remote_surfaceview"/>
+        <!--本地画面预览-->
+        <com.yc.liaolive.videocall.view.VideoCallPerviewWindown
+            android:id="@+id/view_locat_surfaceview"
+            android:layout_width="90dp"
+            android:layout_height="160dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="15dp"/>
+        <!--业务交互控制器-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/view_call_controller">
+        </FrameLayout>
+        <!--<com.faceunity.beauty.view.BeautyControlView-->
+            <!--android:id="@+id/fu_beauty_control"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:visibility="visible"/>-->
+        <!--通话交互-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/view_call_action">
+        </FrameLayout>
+    </FrameLayout>
+</layout>

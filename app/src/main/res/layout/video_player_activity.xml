@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/black">
+        <!--视频播放器-->
+        <com.yc.liaolive.media.manager.LiveVideoPlayerManager
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+        <!-- 头部信息及返回按键 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:background="@drawable/bg_black_shape_mine_ungratien">
+
+            <ImageView
+                android:id="@+id/view_head_icon"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="16dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_default_user_head"
+                android:padding="1.5dp"
+                android:background="@drawable/pay_user_bg_shape"/>
+
+            <ImageView
+                android:id="@+id/view_add_follow"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/arice_red_dot"
+                android:src="@drawable/ic_video_play_follow"
+                android:layout_alignBottom="@+id/view_head_icon"
+                android:layout_alignRight="@+id/view_head_icon"
+                android:layout_marginBottom="-1dp"
+                android:layout_marginRight="-2dp"
+                android:visibility="invisible"
+                tools:visibility="invisible"
+                android:padding="3.5dp"/>
+
+            <ImageView
+                android:id="@+id/view_btn_close"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/video_close_icon"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:visibility="visible"/>
+
+            <com.yc.liaolive.view.widget.MarqueeTextView
+                android:id="@+id/view_title"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/view_head_icon"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                android:shadowColor="#80000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3"
+                android:text="--"
+                tools:text="小野猫、"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <com.yc.liaolive.index.view.AnchorStatusView
+                android:id="@+id/user_offline_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/view_title"
+                android:layout_marginLeft="5dp"/>
+
+        </RelativeLayout>
+
+        <com.yc.liaolive.view.widget.MarqueeTextView
+            android:id="@+id/view_video_desp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="115dp"
+            tools:text="小哥哥来视频吗？"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_marginTop="2dp"
+            android:visibility="visible"/>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/user_flags"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="85dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            app:flexWrap="nowrap"
+            app:showDividerVertical="middle"
+            app:dividerDrawableVertical="@drawable/driver_trans_6dp"/>
+
+        <!-- 底部视频按钮 -->
+        <LinearLayout
+            android:id="@+id/btn_to_video"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:background="@drawable/video_player_tovideo_selector"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h8"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="3dp"
+                android:text="与TA视频"/>
+
+            <TextView
+                android:id="@+id/tv_video_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                tools:text="（10000钻石/分钟）"/>
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>

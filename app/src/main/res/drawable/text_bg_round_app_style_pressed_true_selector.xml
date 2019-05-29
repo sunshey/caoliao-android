@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/text_bg_round_app_style_transparent_radius_pressed_true"></item>
+    <item android:state_pressed="false" android:drawable="@drawable/text_bg_round_app_style_transparent_radius_pressed"></item>
+    <item android:drawable="@drawable/text_bg_round_app_style_transparent_radius_pressed"></item>
+</selector>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.yc.liaolive.view.widget.PayWebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:id="@+id/pay_web_view">
+        </com.yc.liaolive.view.widget.PayWebView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/home_top_bar_bg_shape">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/statusbar_view_height"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height">
+                    <ImageView
+                        android:id="@+id/btn_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_nav_bar_back_white"
+                        android:padding="@dimen/item_space_10"
+                        android:visibility="visible"
+                        android:layout_centerVertical="true"/>
+                    <com.androidkun.xtablayout.XTabLayout
+                        android:id="@+id/tab_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        app:xTabIndicatorHeight="0dp" />
+                    <TextView
+                        android:id="@+id/btn_server"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/vip_service"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:drawablePadding="6dp"
+                        android:text="客服"
+                        android:textSize="14dp"
+                        android:textColor="@color/white"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        android:visibility="invisible"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vip_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

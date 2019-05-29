@@ -1,0 +1,16 @@
+*.iml
+/local.properties
+/build
+/captures
+.idea/
+.gradle/
+
+.freeline_cache
+freeline_project_description.json
+freeline.py
+freeline/
+freeline_core/
+
+import-summary.txt
+/zhiMaSDKProject
+/zhiMaSDKLib

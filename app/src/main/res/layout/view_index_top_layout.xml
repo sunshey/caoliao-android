@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/view_top_view"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+    <!--   android:background="@drawable/bg_black_shape_index_ungratien"-->
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/statusbar_view_height" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            app:xTabMode="scrollable"
+            app:xTabIndicatorHeight="3dp"
+            app:xTabIndicatorWidth="20dp"
+            app:xTabIndicatorColor="@color/main_tab_text_color"
+            app:xTabSelectedTextColor="@color/tab_text_selector_color"
+            app:xTabMaxWidth="75dp"
+            app:xTabMinWidth="62dp"
+            app:xTabTextColor="@color/tab_text_unselector_color"
+            app:xTabTextSize="16dp"
+            app:xTabSelectedTextSize="18dp"
+            app:xTabTextSelectedBold="true" />
+        <!-- app:xTabTextAppearance="@style/IndexTabLayoutTextAppearance"-->
+        <ImageView
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_com_search"
+            android:padding="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/view_line_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/input_edit_color"
+        android:visibility="gone"/>
+</LinearLayout>

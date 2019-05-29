@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:elevation="5dp">
+        <LinearLayout
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/person_menu_bg"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:id="@+id/tv_blacklist"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center"
+                android:text="加入黑名单"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray_f2f2f2" />
+            <TextView
+                android:id="@+id/tv_report"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center"
+                android:text="举报该用户"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray_f2f2f2" />
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/app_style"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

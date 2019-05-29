@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BaseVideoPlayer"><attr format="reference" name="videoPlayerBackgroundDrawable"/><attr format="color" name="videoPlayerBackgroundColor"/><attr format="boolean" name="videoPlayerCreateDefaultController"/></declare-styleable>
+    <item name="view_controller" type="id"/>
+    <item name="view_textureview" type="id"/>
+    <item name="view_video_cover" type="id"/>
+    <integer name="refresh_anmi_durtion">80</integer>
+    <string name="app_name">caoliao-android</string>
+</resources>

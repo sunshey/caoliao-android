@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/root_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    android:background="@drawable/bg_progress_task">
+    <View
+        android:id="@+id/view_progress"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/pro_progress_task"/>
+    <TextView
+        android:id="@+id/view_tv_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FA4D77"
+        android:textSize="@dimen/h2"
+        android:layout_centerInParent="true"
+        android:text="0/100"/>
+</RelativeLayout>

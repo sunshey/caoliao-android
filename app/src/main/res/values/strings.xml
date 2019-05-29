@@ -1,0 +1,815 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">花颜</string>
+    <!--login_type : 登录背景视频 登录背景图片-->
+    <string name="login_type">login_video</string>
+    <string name="download_apk_url">http://a.tn990.com/app.apk</string>
+    <!--login_btn_style 登录界面按钮风格 登录按钮红色 登录按钮橙色-->
+    <string name="login_btn_style">登录按钮红色</string>
+    <string name="hint">提示</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_ok">确定</string>
+    <string name="record_camera_title">拍摄</string>
+    <string name="record_camera_back">返回</string>
+    <string name="record_camera_next">下一步</string>
+    <string name="record_camera_back_delete">回删</string>
+    <string name="record_camera_delay">延迟</string>
+    <string name="record_camera_filter">滤镜</string>
+    <string name="record_camera_init_faild">初始化视频存储路径失败</string>
+    <string name="record_camera_progress_message">正在合并…</string>
+    <string name="record_camera_check_available_faild">少年，存储器爆了！至少需要200M存储空间才能继续拍摄！</string>
+    <string name="record_camera_open_audio_faild">无法打开录音设备！</string>
+    <string name="record_camera_save_faild">视频信息保存失败！</string>
+    <string name="record_camera_exit_dialog_message">(*_*) 您拍摄了一段视频，还未合成，确定要放弃这段视频吗？</string>
+    <string name="delete_onlinemusic_message">是否删除已下载音乐？</string>
+    <string name="record_camera_import">导入</string>
+    <string name="record_camera_import_image">照片</string>
+    <string name="record_camera_import_image_choose">从本地照片选择</string>
+    <string name="record_camera_import_image_faild">导入照片失败</string>
+    <string name="record_camera_import_video">视频</string>
+    <string name="record_camera_import_video_title">截\t取</string>
+    <string name="record_camera_import_video_choose">从本地视频选择</string>
+    <string name="record_camera_import_video_faild">导入视频失败</string>
+    <string name="record_camera_tools_focus">焦点</string>
+    <string name="record_camera_tools_led">闪光</string>
+    <string name="record_camera_ghost">幽灵</string>
+    <string name="record_camera_preview_title">制作</string>
+    <string name="record_camera_preview_pre">拍摄</string>
+    <string name="record_camera_preview_next">下一步</string>
+    <string name="record_camera_cancel_dialog_yes">放弃</string>
+    <string name="record_camera_cancel_dialog_no">继续拍摄</string>
+    <string name="record_video_transcoding_faild">视频转码失败</string>
+    <string name="record_video_transcoding_success">视频保存在:%s</string>
+    <string name="record_read_object_faild">拍摄信息读取失败！请检查SD卡，稍后重试！</string>
+    <string name="record_preview_theme">主题</string>
+    <string name="record_preview_title">预览</string>
+    <string name="record_preview_theme_original">原始</string>
+    <string name="record_preview_theme_load_faild">主题加载失败</string>
+    <string name="record_preview_encoding">正在合成视频中…</string>
+    <string name="record_preview_encoding_format">合成视频中\t%d%%</string>
+    <string name="record_preview_music_nothing">无</string>
+    <string name="record_preview_tab_theme">主题</string>
+    <string name="record_preview_tab_filter">滤镜</string>
+    <string name="record_preview_building">预览准备中…</string>
+    <string name="download_success">下载完成</string>
+    <string name="download_error">下载失败</string>
+    <string name="loading_tips">加载中…</string>
+    <string name="nodata">没有数据</string>
+    <string name="record_camera_import_video_folder_title">相册</string>
+    <string name="dialog_encoding_text">视频处理中...</string>
+    <string name="record_camera_import_tips">拖动画面可以调整\n视频的显示位置</string>
+    <string name="importVideo_tips_select">左右滑动时间轴，截取你想要的视频片段</string>
+    <string name="background_color_textview">背景颜色:</string>
+    <string name="nexttip">下一步</string>
+    <string name="record_camera_import_title6">裁剪</string>
+    <string name="record_camera_import_video_exists">视频不存在</string>
+    <string name="record_camera_import_gif_faild">导入Gif失败</string>
+    <string name="video_layout_loading">正在缓冲...</string>
+    <string name="record_camera_import_type_convert">正在进行格式转换...</string>
+    <string name="video_transcoding_faild">视频转码失败</string>
+    <string name="tab_home_text">Home</string>
+    <string name="tab_mine_text">Mine</string>
+    <string name="login_desp">登陆就表明已阅读并同意服务条款</string>
+    <string name="shared_to">Share To</string>
+    <string name="add_follow_true">已关注</string>
+    <string name="add_follow_false">关 注</string>
+    <!--刷新-->
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="camera_photo">相册</string>
+    <string name="camera_picture">拍照</string>
+    <string name="action_clip">裁剪</string>
+    <string name="msg_camera_invalid_permission_denied">无法打开相机，可能是权限被拒绝</string>
+    <string name="msg_camera_invalid_initial_failed">相机初始化失败，无法打开相机</string>
+    <string name="msg_camera_invalid_unknown_error">无法打开相机，未知错误</string>
+    <string name="msg_could_not_save_photo">无法保存图片</string>
+    <string name="msg_clipping_image">正在裁剪图片</string>
+    <string name="app_desp">新趣是一个专为用户提供视频播放和分享的平台。 在这里你不仅可以观看各种有趣的短视频，同时也可以通过短视频把你的生活点滴分享给其他人，当然和粉丝互动或者点评其他视频也是很有意思的。 还等什么，快来上传短视频吧，让新趣和世界认识你。</string>
+    <string name="upload_notwifi_tips">您的设备未接入WIFI网络，已暂停了视频上传任务，将会在连接WIFI网络后自动开始上传</string>
+    <string name="upload_wifi_tips">设备已接入WIFI网络，上传任务自动开始</string>
+    <string name="app_server">应用服务器</string>
+    <string name="sts_server">http://oss-demo.aliyuncs.com/app-server/sts.php</string>
+    <string name="bucket">nq6-video</string>
+    <string name="bucket_hint">Bucket</string>
+    <string name="set">设置</string>
+    <string name="object_name">请输入OSS文件名，默认test</string>
+    <string name="default_object_name">test</string>
+    <string name="normal">普通上传下载</string>
+    <string name="download">下载</string>
+    <string name="upload">普通上传</string>
+    <string name="multipart_upload"> 断点上传</string>
+    <string name="multipart_pause">暂停</string>
+    <string name="multipart_resume">恢复</string>
+    <string name="multipart">断点续传上传</string>
+    <string name="resize_width">宽，默认100</string>
+    <string name="resize_height">高，默认100</string>
+    <string name="resize">图片缩略</string>
+    <string name="watermark">文字水印</string>
+    <string name="watermark_hint">请输入水印文字</string>
+    <string name="watermark_size">大小，默认100</string>
+    <string name="image_sample">更多图片处理示例</string>
+    <string name="crop">裁剪</string>
+    <string name="rotate">旋转</string>
+    <string name="camera_error_title">相机异常</string>
+    <string name="cannot_connect_camera">无法连接相机，请在系统设置里修改权限</string>
+    <string name="camera_disabled">相机不可用</string>
+    <string name="upload_file_success">上传成功</string>
+    <string name="upload_file_fail">上传失败</string>
+    <string name="upload_file">文件上传中...</string>
+    <string name="compose_file">文件合成中...</string>
+    <string name="get_file_url">获取上传视频中...</string>
+    <string name="video_range_title_1">拖动两侧滑杆裁剪视频时长</string>
+    <string name="video_range_title_2">裁剪后视频时长:</string>
+    <string name="ksy_tips_permissions">您的设备未成功获得视频编辑使用权限！请务必在视频合成前打开网络开关并连接可用的网络。在此之前您仍可以使用拍摄功能。</string>
+    <string name="ksy_tips_compose">您的设备未成功获得视频编辑使用权限！要使用视频合成，请务必打开网络开关并连接可用的网络，连接网络后自动开始授权。若您的设备已经连接网络但授权失败，请尝试先关闭网络再重新打开。</string>
+    <string name="ksy_tips_permissions_title">视频编辑功能使用提示</string>
+    <string name="duration_format" translatable="false"><xliff:g id="hours">%1$s</xliff:g> <xliff:g id="minutes">%2$s</xliff:g></string>
+    <string name="durationformatshort" translatable="false"><xliff:g id="format">%2$d:%3$02d</xliff:g></string>
+    <string name="durationformatlong" translatable="false"><xliff:g id="format">%1$d:%2$02d:%3$02d</xliff:g></string>
+    <string name="media_music_fragment_hot_title">热门歌曲</string>
+    <string name="media_music_fragment_like_title">我的收藏</string>
+    <string name="media_music_fragment_location_title">本地歌曲</string>
+    <string name="home_fragment_follow_title">关注</string>
+    <string name="home_fragment_hot_title">热门</string>
+    <string name="home_fragment_topic_title">话题</string>
+    <string name="mine_fragment_works_title">作品</string>
+    <string name="mine_fragment_like_title">喜欢</string>
+    <string name="mine_fragment_message_title">消息</string>
+    <string name="binding_phone_tips">根据《互联网跟帖评论服务管理规定》需要验证手机号才能发布内容</string>
+    <string name="video_compose_canel_tips">取消该视频合并任务后该视频所有的编辑效果将丢失并且无法恢复，确定要放弃合并吗？</string>
+    <string name="video_upload_canel_tips">取消上传任务后将不可恢复，上传成功可以分享给好友哦~ 确定要取消上传任务吗？</string>
+    <string name="share_home_tips">我刚刚用新趣小视频APP上传了一部视频：</string>
+    <string name="home_share_error_tips">您上传的视频已设置为他人不可见，无法分享，请前往 [个人中心-我的作品] 中修改作品权限!</string>
+    <string name="grade_tips_content">感谢你使用新趣，看会视频让您的眼睛放松吧。您可以前往应用上吊给我们好评噢！</string>
+    <string name="permissions_image_tips">保存图片失败！SD写入取权限被拒绝！要保存图片至你的设备，请务必授予我们SD卡写入权限！是否现在去设置？</string>
+    <string name="detele_video_tips">确定要删除此视频吗？删除后将不可恢复!</string>
+    <string name="set_peivate_video_tips">将视频设置为私密状态后其他用户将无法观看到你的这部作品，确定要这样做吗？</string>
+    <string name="not_wifi_play_video_tips">您当前未连接WIFI网络，使用流量播放可能会消耗一定流量，（播放过的视频且缓存未删除再次播放无需消耗流量） 是否继续播放？</string>
+    <string name="open_weixin_tips">已复制微信号，打开微信-右上角加号-添加朋友-公众号-长按粘贴-搜索并关注公众号，是否立即前往关注？</string>
+    <string name="tips_first_record_msg">个性音乐在这里</string>
+
+    <string name="btn_login_out">退出登录</string>
+    <string name="tip_force_offline">您的帐号已在其它地方登录</string>
+    <string name="dialog_input_text_hint">请输入文字内容</string>
+    <string name="chat_up_finger">手指上滑，取消发送</string>
+    <string name="chat_voice_cancel">松开手指，取消发送</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="chat_press_talk">按住 说话</string>
+    <string name="chat_release_send">松开 发送</string>
+    <string name="chat_release_cancel">松开 取消</string>
+    <string name="chat_image">图片</string>
+    <string name="chat_file">文件</string>
+    <string name="chat_photo">拍摄</string>
+    <string name="chat_video">小视频</string>
+    <string name="chat_audio_too_short">录音过短，请重试</string>
+    <string name="chat_video_too_short">录制过短，请重试</string>
+    <string name="chat_resend">重新发送</string>
+    <string name="chat_del">删除</string>
+    <string name="chat_save">保存</string>
+    <string name="chat_file_too_large">文件过大，发送失败</string>
+    <string name="chat_file_not_exist">文件不存在，发送失败</string>
+    <string name="chat_image_preview_title">图片预览</string>
+    <string name="chat_image_preview_send">发送</string>
+    <string name="chat_image_preview_load_err">图片加载失败</string>
+    <string name="chat_image_preview_ori">原图发送</string>
+    <string name="chat_typing">对方正在输入…</string>
+    <string name="chat_content_bad">内容含有敏感词</string>
+
+
+    <!-- group member profile activity -->
+    <string name="group_member_profile">成员资料</string>
+    <string name="group_member_quiet">设置禁言</string>
+    <string name="group_member_manage">设为管理员</string>
+    <string name="group_member_card">群名片</string>
+    <string name="group_member_del">移出本群</string>
+    <string name="group_member_del_err">移出群成员失败</string>
+    <string name="group_member_del_succ">移出群成员成功</string>
+    <string name="group_member_manage_set_err">设置管理员失败</string>
+    <string name="group_member_manage_set_type_err">该类型群组不能设置管理员</string>
+    <string name="group_member_manage_set_succ">设置管理员成功</string>
+    <string name="group_member_quiet_ing">禁言中</string>
+    <string name="group_member_quiet_ten_min">十分钟</string>
+    <string name="group_member_quiet_one_hour">一小时</string>
+    <string name="group_member_quiet_one_day">一天</string>
+    <string name="group_member_quiet_cancel">取消禁言</string>
+    <string name="group_member_quiet_err">设置禁言失败</string>
+    <string name="group_member_change_card">修改群名片</string>
+    <string name="group_member_already">已经是群成员</string>
+
+    <!-- friendship handle activity -->
+    <string name="friendship_handle_title">申请详情</string>
+    <string name="friendship_handle_ok">同意</string>
+    <string name="friendship_handle_reject">拒绝</string>
+    <string name="friendship_handle_word">附加信息</string>
+
+    <string name="send_success">发送成功</string>
+
+    <!-- choose activity -->
+    <string name="choose_title">选择联系人</string>
+    <string name="choose_need_one">至少选择一个联系人</string>
+
+
+    <string name="action_bar_back">返回</string>
+    <string name="agree">同意</string>
+    <string name="agreed">已同意</string>
+    <string name="refuse">拒绝</string>
+    <string name="refused">已拒绝</string>
+    <string name="done">完成</string>
+    <string name="friend_allow_all">允许任何人添加</string>
+    <string name="friend_refuse_all">拒绝任何人添加</string>
+    <string name="friend_need_confirm">需验证</string>
+    <string name="default_group_name">默认分组</string>
+    <string name="change_group_error">修改分组失败</string>
+    <string name="people">人</string>
+    <string name="login_error">登录失败，请稍后重试</string>
+    <string name="login_error_timeout">登录失败，当前无网络</string>
+    <string name="login_succ">登录成功</string>
+    <string name="kick_logout">你的账号在其他设备终端登录，强制至登录可将对方踢下线</string>
+    <string name="operate_fail">操作失败</string>
+    <string name="need_permission">您需要开启权限,并重启应用</string>
+    <string name="save_succ">保存成功</string>
+    <string name="download_fail">下载失败</string>
+    <string name="downloading">正在下载，请稍候</string>
+    <string name="save_fail">保存失败</string>
+    <string name="save_exist">文件已存在</string>
+    <string name="tls_expire">账号登录已过期，请重新登录</string>
+    <string name="env_normal">当前连接正式环境</string>
+    <string name="env_test">当前连接测试环境</string>
+    <string name="file_not_found">未找到文件，请稍后重试</string>
+    <string name="google_service_not_available">google推送服务不可用，请检查google play设置</string>
+
+    <string name="time_yesterday">昨天</string>
+    <string name="time_day">日</string>
+    <string name="time_month">月</string>
+    <string name="time_year">年</string>
+    <string name="time_more">99+</string>
+
+    <!-- Add newfriend activity -->
+    <string name="search_default">搜索</string>
+    <string name="search_cancel">取消</string>
+    <string name="search_hint">搜索ID或手机号</string>
+    <string name="search_no_result">很抱歉，没有找到符合内容</string>
+
+    <!-- Add newfriend activity -->
+    <string name="title_addfri">添加好友</string>
+    <string name="add_detail_ID">帐号ID</string>
+    <string name="add_detail_name">备注名</string>
+    <string name="add_detail_group">分组</string>
+    <string name="add_detail_message">附加消息</string>
+    <string name="add_friend_send">发送添加好友请求</string>
+    <string name="add_friend_succeed">请求已发送</string>
+    <string name="add_friend_added">已添加好友</string>
+    <string name="add_friend_refuse_all">对方拒绝添加任何人为好友</string>
+    <string name="add_friend_to_blacklist">我在对方的黑名单中</string>
+    <string name="add_friend_error">添加好友失败，请稍后重试</string>
+    <string name="add_friend_del_black_list">添加失败，该用户在你的黑名单中，是否将该用户从黑名单中移除（你需要在移除成功后重发添加好友请求）</string>
+    <string name="add_friend_del_black_err">移出黑名单失败</string>
+    <string name="add_friend_del_black_succ">移出黑名单成功</string>
+
+    <!-- Manager group activity -->
+    <string name="title_manager_group">分组管理</string>
+    <string name="add_new_group">添加分组</string>
+    <string name="add_dialog_title">添加分组</string>
+    <string name="add_dialog_subtitle">请输入新分组的名称</string>
+    <string name="add_dialog_null">分组名称不能为空</string>
+    <string name="title_confirm_delete_group">确认删除改分组吗？</string>
+    <string name="delete_dialog_subtitle">删除分组</string>
+    <string name="delete_dialog_subtitle_sur">,该分组好友将移动到默认分组</string>
+    <string name="delete_group_succ">删除分组成功</string>
+    <string name="add_group_succ">添加分组成功</string>
+    <string name="add_group_error_existed">添加失败，分组已存在</string>
+    <string name="add_group_error_limit">添加失败，分组达到上限</string>
+    <string name="add_group_error">添加分组失败</string>
+    <string name="del_group_error">删除分组失败</string>
+
+    <!--creategroup-->
+    <string name="title_create_group">创建群</string>
+    <string name="subtitle_create_group_name">群名称</string>
+    <string name="btn_add_member">添加群成员</string>
+    <string name="title_choose_group_members">选择联系人</string>
+    <string name="create_group_fail">创建群失败</string>
+    <string name="create_group_fail_because_wording">创建失败，群名含有敏感词</string>
+    <string name="create_group_succeed">创建群成功</string>
+    <string name="create_group_need_name">请输入群名称</string>
+
+
+    <!-- change category activity -->
+    <string name="change_category_title">移至分组</string>
+
+    <!-- search group activity -->
+    <string name="search_group_hint">搜索ID或名称</string>
+
+    <!-- edit activity -->
+    <string name="edit_error">修改失败</string>
+
+    <!-- profile activity -->
+    <string name="profile_detail">详细资料</string>
+    <string name="profile_back">返回</string>
+    <string name="profile_id">账号</string>
+    <string name="profile_remark">备注名</string>
+    <string name="profile_black">加入黑名单</string>
+    <string name="profile_remark_edit">修改备注</string>
+    <string name="profile_chat">发送消息</string>
+    <string name="profile_del">删除好友</string>
+    <string name="profile_group">添加分组</string>
+    <string name="profile_now_group">所在分组</string>
+    <string name="profile_del_succeed">删除好友成功</string>
+    <string name="profile_del_fail">删除好友失败</string>
+    <string name="profile_black_succ">加入黑名单成功</string>
+
+    <!-- group profile activity -->
+    <string name="chat_setting_title">聊天设置</string>
+    <string name="chat_setting_group_member">群成员</string>
+    <string name="chat_setting_group_id">群组ID</string>
+    <string name="chat_setting_group_name">群名称</string>
+    <string name="chat_setting_group_add_opt">加群方式</string>
+    <string name="chat_setting_group_msg_alert">消息提醒</string>
+    <string name="chat_setting_group_introduce">群介绍</string>
+    <string name="chat_setting_group_all_accept">允许任何人加入</string>
+    <string name="chat_setting_group_all_reject">禁止加入</string>
+    <string name="chat_setting_group_auth">需群主审核</string>
+    <string name="chat_setting_quit">退出群</string>
+    <string name="chat_setting_dismiss">解散群</string>
+    <string name="chat_setting_add">申请加群</string>
+    <string name="chat_setting_dismiss_succ">解散群成功</string>
+    <string name="chat_setting_quit_succ">退出群成功</string>
+    <string name="chat_setting_quit_fail_private">讨论组不能解散</string>
+    <string name="chat_setting_change_err">修改失败</string>
+    <string name="chat_setting_change_group_name">修改群名称</string>
+    <string name="chat_setting_change_group_intro">修改群介绍</string>
+    <string name="chat_setting_no_rev">不接收消息</string>
+    <string name="chat_setting_rev_notify">接收并提醒消息</string>
+    <string name="chat_setting_rev_not_notify">接收不提醒消息</string>
+    <string name="chat_setting_invite_error">邀请群成员失败</string>
+
+
+    <!-- Add newfri activity -->
+    <string name="title_new_fri">新朋友</string>
+    <string name="newfri_agree">同意</string>
+    <string name="newfri_reject">拒绝</string>
+    <string name="newfri_do">操作</string>
+    <string name="newfri_disagree">已拒绝</string>
+    <string name="newfri_accept">已接受</string>
+    <string name="newfri_wait">等待验证</string>
+
+    <!-- message -->
+    <string name="summary_image">[图片]</string>
+    <string name="summary_voice">[语音]</string>
+    <string name="summary_video">[小视频]</string>
+    <string name="summary_file">[文件]</string>
+    <string name="summary_friend_add">请求添加好友</string>
+    <string name="summary_friend_added">我已添加</string>
+    <string name="summary_friend_add_me">请求添加</string>
+    <string name="summary_friend_recommend">推荐添加</string>
+    <string name="summary_me">我</string>
+    <string name="summary_group_apply">申请加群</string>
+    <string name="summary_group_invite">邀请</string>
+    <string name="summary_group_add">加入群</string>
+    <string name="summary_agree">同意</string>
+    <string name="summary_disagree">拒绝</string>
+    <string name="summary_invite_person">邀请人</string>
+    <string name="summary_handle_person">处理人</string>
+    <string name="summary_group_admin_change">管理员变更</string>
+    <string name="summary_group_info_change">群资料变更</string>
+    <string name="summary_group_mem_change">群成员变更</string>
+    <string name="summary_group_mem_add">加入群</string>
+    <string name="summary_group_mem_quit">退出群</string>
+    <string name="summary_group_mem_kick">被踢出群</string>
+    <string name="summary_group_mem_modify">资料变更</string>
+
+    <string name="home_contact_tab">联系人</string>
+    <string name="new_friend">新朋友</string>
+    <string name="public_group">公开群</string>
+    <string name="discuss_group">讨论组</string>
+    <string name="chatroom">聊天室</string>
+    <string name="addfriend">添加好友</string>
+    <string name="contact_add_group">添加群组</string>
+    <string name="manangergroup">管理分组</string>
+
+    <string name="conversation_system">系统消息</string>
+    <string name="conversation_system_friend">新朋友</string>
+    <string name="conversation_system_group">群组消息</string>
+    <string name="conversation_del">删除会话</string>
+    <string name="conversation_draft">[草稿]</string>
+
+    <!--实名认证-->
+    <string name="attest_title">实名认证</string>
+    <string name="live_user_attest_title">实名认证</string>
+    <string name="live_attest_btn">主播认证</string>
+    <string name="live_attest_desp">请如实准确填写本人信息，否则驳回认证</string>
+    <string name="live_attest_user_number">身份证号</string>
+    <string name="live_attest_user_name">真实姓名</string>
+    <string name="live_attest_user_name_desp">请填写身份证上的姓名</string>
+    <string name="live_attest_user_number_desp">请填写正确的身份证号</string>
+    <string name="live_attest_submit">提交</string>
+    <string name="live_attest_error_name">请输入正确的姓名</string>
+    <string name="live_attest_error_code">请输认证填写身份证号码</string>
+
+    <string name="list_load_empty">没有更多了</string>
+    <string name="list_load_error">加载失败</string>
+    <!--用户中心-->
+    <string name="mine_monery">钻石</string>
+    <string name="mine_msg">消息</string>
+    <string name="mine_request">邀请</string>
+    <string name="mine_bind_phone">绑定手机</string>
+    <string name="mine_attest">实名认证</string>
+    <string name="mine_video_desp">视频介绍</string>
+    <string name="mine_settingp">设置</string>
+    <string name="mine_service">在线客服</string>
+    <string name="mine_help">帮助</string>
+    <string name="mine_version">版本</string>
+    <string name="mine_visitor_history">访客记录</string>
+    <string name="mine_other_setting">其他设置</string>
+    <string name="mine_clear_cache">清除缓存</string>
+    <string name="mine_contcat_service">联系客服</string>
+    <string name="mine_sys_msg">系统消息</string>
+    <string name="text_transaction">我的积分</string>
+    <string name="text_collect_true">已收藏</string>
+    <string name="mine_sys_setting">系统设置</string>
+    <string name="mine_share">分享给好友</string>
+
+    <string name="text_other_login">其他快速登录方式</string>
+    <!--服务条款-->
+    <string name="server_url">http://v.nq6.com/user_services.htm</string>
+    <string name="register_error">错误，重复操作！</string>
+    <string name="mine_edit">编辑</string>
+    <string name="mine_video">视频</string>
+    <string name="mine_image">相册</string>
+
+    <string name="mine_firend">好友</string>
+    <string name="mine_fans">粉丝</string>
+    <string name="mine_follow">关注</string>
+    <!--TAB-->
+    <string name="index_tab_home">首页</string>
+    <string name="index_tab_live">关注</string>
+    <string name="index_tab_video">撩撩</string>
+    <string name="index_tab_msg">消息</string>
+    <string name="index_tab_mine">我的</string>
+    <string name="login_other">快捷登录</string>
+    <!--注册-->
+    <string name="login_qq">QQ</string>
+    <string name="login_phone">手机登录</string>
+    <string name="login_visitor">游客登录</string>
+    <string name="login_weixin">微信</string>
+    <string name="login_next">下一步</string>
+    <string name="register_phone_title">填写手机号</string>
+    <string name="register_hint_phone">请输入手机号码</string>
+    <string name="register_hint_code">请输入验证码</string>
+    <string name="index_header_task">领取礼包</string>
+    <string name="index_header_task_desp">豪礼送送送</string>
+    <string name="index_header_room">我的房间</string>
+    <string name="index_header_room_desp">开直播得福利</string>
+    <string name="live_code_attest_desp">为了保证你的利益，以下信息请如实填写!</string>
+    <string name="live_attest_date">身份证有效期</string>
+    <string name="live_attest_date_desp">请填写你的身份证有效期</string>
+    <string name="live_attest_image">身份证照片</string>
+    <!--视频通话-->
+    <string name="video_call_fail">美颜</string>
+    <string name="video_call_camera_open">打开</string>
+    <string name="video_call_camera_close">关闭</string>
+    <string name="video_call_camera_start">前置</string>
+    <string name="video_call_camera_end">后置</string>
+
+    <string name="video_call_finlish">挂断</string>
+    <string name="video_call_sound_close">静音</string>
+    <string name="video_call_sound_open">原音</string>
+    <string name="video_call_gift">点击送礼</string>
+    <string name="tip_close_mic">关闭麦克风</string>
+    <string name="tip_open_mic">打开麦克风</string>
+    <string name="tip_set_speaker">切换到扬声器</string>
+    <string name="tip_set_headset">切换到听筒</string>
+    <string name="tip_set_beauty">设置美颜</string>
+    <string name="main_new_call_title">视频通话请求</string>
+
+    <string name="tip_welcome">欢迎使用基于TILVBSDK的双人视频通话示例程序, 该示例程序可以在两台安卓手机上进行视频/语音通话\n\n在使用之前，请输入一个用户标识(为避免冲突，建议使用自己的手机号)，该用户标识将作为呼叫号码，供别人呼叫，并作为来电号码显示在来电界面</string>
+
+    <string name="title_login">手机号登录</string>
+
+    <string name="tip_account">用户名</string>
+    <string name="tip_password">密码</string>
+
+    <string name="tip_hit_account">用户名为 4 ~ 24 个字符，不能为纯数字</string>
+    <string name="tip_hit_password">密码长度为 8 ~ 16 个字符</string>
+
+    <string name="tip_logout">注销</string>
+
+    <string name="tip_my_address">本机号码</string>
+    <string name="tip_dst_address">对方号码</string>
+    <string name="tip_make_call">发起呼叫</string>
+
+    <string name="tip_call_list">通话记录</string>
+
+    <string name="tip_accept_call">接听来电</string>
+    <string name="tip_reject_call">拒接来电</string>
+    <string name="tip_end_call">挂断</string>
+
+    <string name="tip_close_camera">关闭摄像头</string>
+    <string name="tip_open_camera">打开摄像头</string>
+    <string name="tip_switch_camera">切换摄像头</string>
+
+    <string name="toast_phone_empty">呼叫号码不能为空</string>
+    <string name="makecall">呼叫</string>
+    <string name="phonenum_tips">请输入需要拨打手机号</string>
+    <string name="phone_number">呼叫号码</string>
+    <string name="myphone">本机号码</string>
+    <string name="invite">邀请好友</string>
+    <string name="log">日志</string>
+    <string name="invite_tip">输入邀请用户id</string>
+    <string name="float_window_not_allow">悬浮窗权限未开启 请在应用-权限中打开悬浮窗权限</string>
+    <string name="send">发送</string>
+    <string name="activity_publish_beauty">美颜效果</string>
+    <string name="activity_publish_white">美白效果</string>
+    <string name="text_live">正在直播>></string>
+    <string name="text_live_add_title_tips">轻触这里设置直播间封面</string>
+    <string name="text_live_admire_limit">点赞过于频繁</string>
+    <string name="tip_no_permission">权限不足</string>
+    <string name="text_live_title_input">输入标题吸引更多粉丝</string>
+    <string name="text_photo_title_input">你的照片你做主</string>
+    <string name="text_live_open_lbs">开启位置</string>
+    <string name="text_live_close_lbs">不显示地理位置</string>
+    <string name="text_live_record_scr">启动录屏</string>
+    <string name="text_live_not_record_scr">不启动录屏</string>
+    <string name="text_live_location">正在定位中</string>
+    <string name="text_live_lbs_fail">定位失败</string>
+    <string name="text_live_lbs_unknown">不显示地理位置</string>
+    <string name="text_live_default_title">我的直播我做主</string>
+    <string name="text_start_push">开启推流</string>
+    <string name="text_start_screen_record">启动录屏</string>
+    <string name="text_record_info">开始录制后直播视频自动录制，并可以进行回放</string>
+    <string name="text_live_all_see">所有人可看</string>
+    <string name="text_live_share">同步到</string>
+    <string name="host_sign">我的签名就是把我的世界直播给你们</string>
+
+    <string name="invite_dialog_tips">主播邀请您与他进行互动直播</string>
+    <string name="live_end_ask_tips">确定结束直播?</string>
+    <string name="live_end_tips">直播结束啦!</string>
+    <string name="live_time_tips">直播时长</string>
+    <string name="live_members_tips">观看人数</string>
+    <string name="live_admires_tips">获赞数量</string>
+    <string name="btn_return_home">退出直播间</string>
+    <string name="live_config_start">开始直播</string>
+    <!--设置中心-->
+    <string name="setting_title">设置</string>
+    <string name="setting_unline_msg_notify">离线消息通知</string>
+    <string name="setting_blacklist">黑名单</string>
+    <string name="setting_harass">防骚扰设置</string>
+    <string name="setting_nomsg">陌生人消息</string>
+    <string name="setting_vibrate">震动</string>
+    <string name="setting_sound">声音</string>
+    <string name="setting_online_set">在线状态开关</string>
+    <string name="setting_feedback">意见反馈</string>
+    <string name="setting_help">帮助</string>
+    <string name="setting_window">后台接听来电</string>
+    <string name="setting_hwcodec">视频聊硬件编码</string>
+    <string name="setting_version">版本</string>
+    <string name="setting_cache">清理缓存</string>
+    <string name="setting_login_out">退出</string>
+    <string name="live_config_end">取消</string>
+    <string name="net_error">数据获取失败，请稍后重试</string>
+    <string name="setting_loginout_tips">注销中,请稍候..</string>
+    <string name="setting_permission_error_title">权限申请失败</string>
+    <string name="setting_permission_error_tips">权限被拒绝！请授予应用读写SD卡权限！是否现在去设置？</string>
+    <string name="setting_permission_setting">去设置</string>
+    <string name="setting_no_cache_tips">没有缓存可清理</string>
+    <string name="setting_cache_clean_finlish">缓存清理完成</string>
+    <string name="text_live_changed_title_tips">轻触这里更换直播间封面</string>
+    <string name="gift_title">送给:</string>
+    <string name="gift_send_out">赠送</string>
+    <string name="gift_count">数量</string>
+    <string name="gift_day_detail">今日明细</string>
+    <string name="gift_recharge">充值</string>
+    <string name="msg_title">消息</string>
+    <string name="index_tab_find">发现</string>
+
+    <!--用户基本信息弹窗-->
+    <string name="user_info_home">主页</string>
+    <string name="user_info_private_msg">私信</string>
+    <string name="user_info_gift">送礼</string>
+    <string name="user_info_speech">禁言</string>
+    <string name="user_info_follow">关注</string>
+    <string name="recharge_pay_zfb">支付宝充值</string>
+    <string name="recharge_pay_wx">微信支付</string>
+    <string name="recharge_tips_content">请选择充值方式</string>
+    <string name="recharge_explain">充值说明</string>
+    <string name="recharge_explain_help">公司内部测试期间，所有充值实付最多为9分钱</string>
+    <string name="recharge_explain_btn">充值</string>
+    <string name="dialog_share">取消分享</string>
+    <string name="chat_record">拍摄</string>
+    <string name="chat_video_call">视频聊天</string>
+    <string name="chat_gift">礼物</string>
+    <string name="register_user_data_complement_tips">提示：性别确认后，将不能更改</string>
+    <string name="register_complment_title">完善个人资料</string>
+    <string name="register_complment_more">完成</string>
+    <string name="sex_man">男</string>
+    <string name="sex_wumen">女</string>
+    <string name="user_complment_edit_tips">*性别确认后，将无法修改</string>
+    <string name="money_name">钻石</string>
+    <string name="gift_monery_error">不足，请充值继续</string>
+
+    <string name="input">输入</string>
+
+    <!--视频通话-->
+    <string name="call_make_out_tips">正在等待对方接听中...</string>
+    <string name="call_out_title">视频连通后，将根据时长扣费</string>
+    <string name="video_text_accept">对方接受了您的视频通话请求</string>
+    <string name="video_text_reject">对方拒绝了您的视频通话请求</string>
+    <string name="text_live_over">主播已退出房间</string>
+    <string name="text_live_over_tips">加个关注不迷路</string>
+    <string name="call_desp_tips">视频连通后，将通过时长扣费</string>
+    <string name="attention">关注</string>
+    <string name="fans">粉丝</string>
+    <string name="fans_contribution">粉丝亲密度</string>
+    <string name="my_level">我的等级</string>
+    <string name="my_vip">我的会员</string>
+    <string name="diamond">钻石</string>
+    <string name="get_deposit">提现</string>
+    <string name="transaction">积分</string>
+
+    <string name="my_diamond">我的钱包</string>
+    <string name="my_transaction">我的积分</string>
+    <string name="left_diamond">剩余钻石</string>
+    <string name="left_transaction">剩余积分</string>
+    <string name="online_charge">在线充值</string>
+
+    <string name="text_tips_4g">当前设备网络未连接WIFI，是否继续？</string>
+
+    <string name="level_diffrence">距离LV%1$d还差%2$d点经验</string>
+    <string name="diamond_price">%1$s钻石/1分钟</string>
+
+
+    <string name="report_user_success">您的举报已被记录，平台将立即进行核实</string>
+    <string name="call_in_tips">有人向你发起了视频邀请</string>
+    <string name="call_out_tips">正在等待对方接听...</string>
+    <string name="video_text_timeout">用户未响应您的视频通话请求</string>
+    <string name="make_call_out_tips">到时自动续费</string>
+    <string name="text_continue_tips">视频已经结束，如需继续将根据时长扣费</string>
+
+    <string name="remove_blacklist">确认从黑名单中移除%1$s吗？</string>
+    <string name="submit">提 交</string>
+    <string name="copy">点击复制</string>
+    <string name="qq">QQ号：%1$s</string>
+    <string name="help_detail">帮助详情</string>
+    <string name="edit_info">编辑资料</string>
+    <string name="nickname">昵称</string>
+    <string name="id">ID</string>
+    <string name="sex">性别</string>
+    <string name="place">所在地</string>
+    <string name="select">请选择</string>
+    <string name="make_input">(必填)</string>
+    <string name="signature">个性签名</string>
+    <string name="no_input">请填写</string>
+    <string name="authentication">实名认证</string>
+    <string name="no_authentication">未认证</string>
+    <string name="phone">手机号码</string>
+    <string name="bind_qq">QQ</string>
+    <string name="weixin">微信</string>
+    <string name="no_bind">未绑定</string>
+    <string name="edit_nickname">修改昵称</string>
+    <string name="save">保存</string>
+    <string name="edit_signature">修改个性签名</string>
+    <string name="name_signature">实名认证</string>
+    <string name="name_anchor">主播认证</string>
+    <string name="real_name">真实姓名</string>
+    <string name="signature_number">身份证号</string>
+    <string name="signature_expire">身份证有效期</string>
+    <string name="now_signature">立即认证</string>
+    <string name="person_info">个人资料</string>
+    <string name="location">TA的位置</string>
+    <string name="consume">消费</string>
+    <string name="one_chat">私聊</string>
+
+    <string name="reset">重试</string>
+    <string name="money_not_funds">金币不足</string>
+    <string name="call_get_anchor_package_error">获取主播设定套餐失败</string>
+    <string name="call_get_anchor_package_excption">错误，数据异常</string>
+    <string name="call_get_anchor_package_excption_error">错误，套餐信息有误</string>
+    <string name="call_out_ready">请求视频通话准备中...</string>
+    <string name="call_warn_tips">金币不足，请充值</string>
+    <string name="text_publish_start">开启一对一速配</string>
+    <string name="call_out_time_out">对方未上线或超时未做出响应</string>
+    <string name="video_call_exit_tips">确定要退出视频通话吗？</string>
+    <string name="video_call_ready_tips">正在配对中，等待帅哥呼叫</string>
+
+    <string name="modify_phone">手机号绑定</string>
+    <string name="get_code">获取验证码</string>
+    <string name="bind">绑 定</string>
+    <string name="binded">已绑定</string>
+    <string name="unbinded">未绑定</string>
+    <string name="nick_count">%1$d/%2$d</string>
+
+    <string name="nick_tint">*%1$s最多%2$d个字</string>
+    <string name="authenticationing">正在审核中</string>
+
+    <string name="video_live">视频聊天</string>
+    <string name="attentioned">已关注</string>
+
+    <string name="text_live_nofollow">推荐主播</string>
+    <string name="text_live_nofollow_tips">你关注的主播都会在这里哦</string>
+    <string name="text_live_nofollow_empty">关注列表为空</string>
+    <string name="video_call_loading">套餐查询中...</string>
+    <string name="confirm_modify">确认修改</string>
+    <string name="text_video_call_tips">正在呼叫你进行视频通话...</string>
+    <string name="person_center_follow">自己时刻都在关注自己</string>
+
+    <string name="skip">跳过</string>
+
+    <string name="live_publish_permission_tips">"获取拍照、录音、存储 权限失败，要正常开启直播，需要您授予以上权限，请前往设置中心找到 权限设置 并手动开启[拍照、录音、存储]权限"</string>
+    <string name="live_photo_permission_tips">获取拍照、读取、存储 权限失败，请前往设置中心找到 权限设置 并手动开启[拍照、录音、存储]权限</string>
+    <string name="dialog_task_title">我的任务</string>
+    <string name="text_bind_phone_success">有钱就该任性点\n赶紧找个美女主播聊聊吧</string>
+    <string name="text_bind_phone_code">验证码</string>
+    <!--首页刷新按钮-->
+    <string name="index_refresh_behavior">com.yc.liaolive.view.benavior.RefreshButtonBehavior</string>
+    <string name="authentication_type">0123456789xX</string>
+
+    <string name="vip_vip">VIP会员</string>
+    <string name="payway">支付方式</string>
+    <string name="vip_right">VIP特权</string>
+    <string name="vip_time">%1$d个%2$s</string>
+
+    <string name="dialog_login_submit">知道啦</string>
+    <string name="dialog_red_open">立即领取</string>
+    <string name="mine_num">(%1$s)</string>
+    <string name="index_video_changed">换一批</string>
+    <string name="index_video_title">视频聊</string>
+    <string name="index_video_desp">翻牌撩妹子</string>
+    <string name="chat_copy">复制</string>
+    <string name="index_home_tab_square">广场</string>
+    <string name="index_home_tab_1v1">1v1快聊</string>
+    <string name="text_load_empty">没有更多内容了</string>
+    <string name="bind_phone_tips">*1、福利钻石包含1000钻,新手福利绑定手机后只能领取一次;\n2、手机用户注册,可以直接领取;\n3、绑定手机号后,可作为账号登录,您的账号信息将严格按照相关制度进行保密.</string>
+    <string name="upload_tips">更新内容\n修复已知BUG，提升稳定性\n优化性能，提升用户体验</string>
+    <!--私密相册-->
+    <string name="media_image">相册</string>
+    <string name="media_photo">照片</string>
+    <string name="media_video">视频</string>
+    <string name="index_home_tab_image">图片</string>
+    <string name="media_upload_btn_image">上传图片</string>
+    <string name="media_upload_btn_video">上传视频</string>
+    <string name="media_image_empty">您还没有上传照片呢~上传美照，吸引更多异性</string>
+    <string name="media_image_video">您还没有上传视频呢~上传视频，吸引更多异性</string>
+    <string name="media_image_empty2">该用户没有上传照片</string>
+    <string name="media_video_empty2">该用户没有上传视频</string>
+    <string name="media_preview_tips">手指按住查看...</string>
+    <string name="buy_media_error">开通会员海量私密照片免费查看</string>
+    <string name="buy_media_video_error">开通会员海量私密视频免费看</string>
+    <string name="buy_media_title_image">查看私照</string>
+    <string name="buy_media_title_video">查看私密视频</string>
+    <string name="vip_tips">• VIP尊贵标识\n• 排名靠前,普通用户之前\n• 每天可领取1000钻石\n• 免费看私照\n• 免费看视频\n• 免费发消息</string>
+    <string name="upload_image">上传照片</string>
+    <string name="upload_video">上传视频</string>
+    <string name="index_home_tab_video">小视频</string>
+    <string name="msg_live_tips">我正在直播呢！\n等你点击进来哟</string>
+    <!--图片裁剪-->
+    <string name="crop_image_activity_title"></string>
+    <string name="crop_image_menu_rotate_left">Rotate counter clockwise</string>
+    <string name="crop_image_menu_rotate_right">Rotate</string>
+    <string name="crop_image_menu_crop">Crop</string>
+    <string name="crop_image_menu_flip">Flip</string>
+    <string name="crop_image_menu_flip_horizontally">Flip horizontally</string>
+    <string name="crop_image_menu_flip_vertically">Flip vertically</string>
+    <string name="pick_image_intent_chooser_title">Select source</string>
+    <string name="crop_image_activity_no_permissions">Cancelling, required permissions are not granted</string>
+    <string name="recharge_title">快速充值</string>
+    <string name="authen_tips">请保证头像，姓名，身份证号码清晰完整。\n遮挡、模糊、不完整的身份证照片，或传不相关图片的都将导致审核不通过</string>
+    <!--资料修改，主播认证-->
+    <string name="modify_nickname">昵称</string>
+    <string name="modify_id">ID</string>
+    <string name="modify_bind_phone">手机号码</string>
+    <string name="modify_sex">性别</string>
+    <string name="modify_height">身高</string>
+    <string name="modify_weight">体重</string>
+    <string name="modify_wx">微信</string>
+    <string name="modify_qq">QQ</string>
+    <string name="modify_constellation">星座</string>
+    <string name="modify_city">所在城市</string>
+    <string name="modify_desp">个人介绍</string>
+    <string name="modify_tag">形象标签</string>
+    <string name="modify_singtrue">个性签名</string>
+    <string name="modify_authentication">主播认证</string>
+    <string name="modify_authentication_title">身份认证</string>
+    <string name="modify_authentication_image">身份证照片</string>
+    <string name="input_user_name">请输入身份证上姓名</string>
+    <string name="input_user_num">请输入正确的身份证号码</string>
+    <string name="authentication_front">身份证正面照片</string>
+    <string name="authentication_unfront">身份证反面照片</string>
+    <string name="authentication_submit">提交申请认证</string>
+    <string name="authentication_tips">*严禁上传任何违反国家法律违规内容</string>
+    <string name="call_camera_tips">聊天开始后，对方看不到你的视频,可在聊天过程中打开摄像头</string>
+    <string name="vip_authorty">2.可免费与主播妹子私聊.\n3.享受直播间尊贵的进场提示.\n4.与众不同的皇冠标识.</string>
+    <string name="vip_reward_desc">2.话费领取：请于充值后联系红娘客服获取话费.\n3.活动开启时间：2018年11月26日.</string>
+    <string name="vip_permiss">VIP尊贵会员享受以下特权:</string>
+    <string name="make_call_tips">预约成功，稍后就能收到主播小姐姐的回拨了</string>
+    <string name="call_wake_recharge_tips">只有充足的余额才能与主播视频聊天\n您的钻石不足一分钟通话时长</string>
+    <string name="call_wake_tips"><![CDATA[下手太慢，主播被抢走了<br>可<font color=\'#FF7575\'><big>立即预约TA</big></font>,或者稍后访问]]></string>
+    <string name="windown_get_error">权限获取失败，悬浮播放功能关闭可在\"我的\"-\"设置\"中操作</string>
+    <string name="upload_audio_tips">禁止上传色情、反动等非法内容（含图片、视频、声音），一经发现将提交公安机关等处理，请大家一起维护网络环境，坚决举报不良内容。</string>
+</resources>

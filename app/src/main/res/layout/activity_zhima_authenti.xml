@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <com.yc.liaolive.view.widget.CommentTitleView
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:commentTitle="实名认证" />
+        <com.yc.liaolive.view.layout.ReboundScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <EditText
+                            android:id="@+id/input_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/setting_item_height"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:textSize="@dimen/h8"
+                            android:textColorHint="@color/colorTextC"
+                            android:textColor="@color/coment_color"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/bg_comment_input_white"
+                            android:inputType="textAutoComplete"
+                            android:hint="请填写您的真实姓名" />
+                        <EditText
+                            android:id="@+id/input_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/setting_item_height"
+                            android:layout_marginTop="9dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:textSize="@dimen/h8"
+                            android:textColorHint="@color/colorTextC"
+                            android:textColor="@color/coment_color"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/bg_comment_input_white"
+                            android:inputType="number"
+                            android:hint="请填写您的身份证号" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/btn_next"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/setting_item_height"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="25dp"
+                        android:textSize="@dimen/h10"
+                        android:text="提交"
+                        android:textColor="@color/white"
+                        android:background="@drawable/bg_comment_button_false"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/h4"
+                        android:layout_marginTop="8dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="提交成功后将进入芝麻认证服务"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </com.yc.liaolive.view.layout.ReboundScrollView>
+    </LinearLayout>
+</layout>
